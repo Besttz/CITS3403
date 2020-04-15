@@ -6,18 +6,49 @@ body {
 
 h1 {
     font-weight: 100;
-    color: #fafafa;
-    text-align: center;
-    margin-top: 5em;
+    /* color: #fafafa; */
+    margin-top: 10vh;
+    letter-spacing:0.1em;
+
+}
+h2 {
+    /* color: #fafafa; */
+    padding-top: 10vh;
+    font-weight: 200;
+    letter-spacing:0.1em;
+
 }
 
 p {
-    color: #fafafa;
-    text-align: center;
+    /* color: #fafafa; */
+    text-align: center;    
+    font-weight: 300;
 
 }
+
+@media screen and (min-width: 601px) {
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+  }
+
 
 .navbar-brand {
     font-weight: 400;
 
+}
+.home-icons {
+    padding-top: 10vh;
+}
+
+.home-icon {
+    max-width: 350px;
+    max-height: 30vh;
 }

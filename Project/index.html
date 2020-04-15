@@ -11,15 +11,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/home.js"></script>
   <style>
-
+    body {
+      color: #fafafa;
+    }
   </style>
 </head>
 
 <body>
+  <!--Nav Bar-->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
-      <img src="favicon.svg" alt="Logo" style="fill:#FFF;width:25px;">
+      <img src="media/favicon.svg" alt="Logo" style="fill:#FFF;width:25px;">
       WEB MUSEUM</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"> </span>
@@ -38,8 +42,36 @@
       </ul>
     </div>
   </nav>
-  <h1>WELCOME TO WEB MUSEUM!</h1>
-  <p>The Basic Components of WEB.</p>
+  <!--Contents-->
+  <div class="container-fluid">
+    <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
+    <!-- <p>The Basic Components of WEB.</p> -->
+
+    <div class="container-fluid home-icons">
+      <div class="row">
+        <a class="col" href="/html/index.html">
+          <img class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"
+          onmouseover="changeHead(html)" onmouseout="changeHead(defaultHead)"> </a>
+        <a class="col" href="/css/index.html">
+          <img class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"
+          onmouseover="changeHead(css)" onmouseout="changeHead(defaultHead)"> </a>
+        <a class="col" href="/js/index.html">
+          <img class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"
+          onmouseover="changeHead(js)" onmouseout="changeHead(defaultHead)"> </a>
+      </div>
+    </div>
+
+    <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
+    <p class="text-center homepage"> Web Museum contains the main components of modern WEB development. <br>
+      Choose the icon you'd like to explore, or scoll down.</h3>
+
+    <!-- <footer>
+      <p style="font-size: 2px;">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+          title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      </p>
+    </footer> -->
+  </div>
 </body>
+
 
 </html>
