@@ -28,25 +28,17 @@ $(document).ready(function () {
         }
     );
     $("#cssIcon").hover(function () {
-        $("#headText").fadeOut(500);
-        setTimeout(function () { changeHead(css); }, 499);
-        $("#headText").fadeIn(500);
+        iconOnHover(css);
     },
         function () {
-            $("#headText").fadeOut();
-            setTimeout(function () { changeHead(defaultHead); }, 499);
-            $("#headText").fadeIn();
+            iconOffHover();
         }
     );
     $("#jsIcon").hover(function () {
-        $("#headText").fadeOut(500);
-        setTimeout(function () { changeHead(js); }, 499);
-        $("#headText").fadeIn(500);
+        iconOnHover(js);
     },
         function () {
-            $("#headText").fadeOut();
-            setTimeout(function () { changeHead(defaultHead); }, 499);
-            $("#headText").fadeIn();
+            iconOffHover();
         }
     );
 });
