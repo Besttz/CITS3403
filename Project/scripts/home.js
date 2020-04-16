@@ -48,6 +48,25 @@ function iconOffHover() {
     $("#headText").fadeIn(300);
 }
 
+function iconOnClick(obj) {
+    $("#homeP").fadeOut(100);
+    setTimeout(function () {
+        document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery.";
+    }, 100);
+    $("#homeP").fadeIn(100);
+    setTimeout(function () {
+        document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery..";
+    }, 300);
+    setTimeout(function () {
+        document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery...";
+    }, 700);
+    setTimeout(function () {
+        document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery....";
+    }, 900);
+
+    setTimeout("window.location.href = '/" + obj + "/index.html'", 1000);
+}
+
 $(document).ready(function () {
     setTimeout(function () { $("#headText").fadeIn(300); }, 300);
     setTimeout(function () { $(".home-icons").fadeIn(300); }, 400);
@@ -73,5 +92,19 @@ $(document).ready(function () {
         function () {
             iconOffHover();
         }
+    );
+
+
+    $("#htmlIcon").click(function () {
+        iconOnClick("html");
+    }
+    );
+    $("#cssIcon").click(function () {
+        iconOnClick("css");
+    }
+    );
+    $("#jsIcon").click(function () {
+        iconOnClick("js");
+    }
     );
 });
