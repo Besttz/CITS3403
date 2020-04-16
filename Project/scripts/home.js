@@ -7,19 +7,52 @@ function changeHead(txt) {
 }
 
 function iconOnHover(obj) {
-    $("#headText").fadeOut(500);
-    setTimeout(function () { changeHead(obj); }, 499);
-    $("#headText").fadeIn(500);
+    $("#headText").stop();
+    $("#bg-img").stop();
+    $("#headText").fadeOut(300);
+    setTimeout(function () {
+        changeHead(obj);
+    }, 300);
+    $("#headText").fadeIn(300);
+    switch (obj) {
+        case html:
+            $("#bg-img").css("background-image", "url(media/red.jpg)");
+            $("#bg-img").fadeIn(300);
+            break;
+        case css:
+            $("#bg-img").css("background-image", "url(media/yellow.jpg)");
+            $("#bg-img").fadeIn(300);
+            setTimeout(function () {
+                $("body").css("color", "#222");
+            }, 300);
+
+            break;
+        case js:
+            $("#bg-img").css("background-image", "url(media/blue.jpg)");
+            $("#bg-img").fadeIn(300);
+            setTimeout(function () { $("body").css("color", "#222"); }, 300);
+            break;
+        default:
+            break;
+    }
 }
 
 
 function iconOffHover() {
-    $("#headText").fadeOut(500);
-    setTimeout(function () { changeHead(defaultHead); }, 499);
-    $("#headText").fadeIn(500);
+    $("#headText").stop();
+    $("#bg-img").stop();
+    $("#headText").fadeOut(300);
+    $("#bg-img").fadeOut(300);
+    setTimeout(function () { changeHead(defaultHead); }, 300);
+    setTimeout(function () { $("body").css("color", "#fdfdfd"); }, 300);
+    $("#headText").fadeIn(300);
 }
 
 $(document).ready(function () {
+    setTimeout(function () { $("#headText").fadeIn(300); }, 300);
+    setTimeout(function () { $(".home-icons").fadeIn(300); }, 400);
+    setTimeout(function () { $("#homeText").fadeIn(300); }, 500);
+
     $("#htmlIcon").hover(function () {
         iconOnHover(html);
     },

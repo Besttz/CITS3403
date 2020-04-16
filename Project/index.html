@@ -4,7 +4,7 @@
 <head>
   <title>WEB MUSEUM</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,7 +14,32 @@
   <script src="scripts/home.js"></script>
   <style>
     body {
-      color: #fafafa;
+      color: #fdfdfd;
+      background-image: url(media/grey.jpg);
+      height: 100vh;
+    }
+
+    img:hover {
+      transition: all 0.5s;
+      transform: scale(1.2);
+    }
+
+    img {
+      transform: scale(1);
+      transition: all 0.5s;
+    }
+
+    #bg-img {
+      position: fixed;
+      background-image: url(media/red.jpg);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+    }
+    #headText, .home-icons ,#homeText,#bg-img {
+      display: none;
     }
   </style>
 </head>
@@ -43,7 +68,7 @@
     </div>
   </nav>
   <!--Contents-->
-  <div class="container-fluid">
+  <div id="homeBody" class="container-fluid" ">
     <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
     <!-- <p>The Basic Components of WEB.</p> -->
 
@@ -52,22 +77,25 @@
         <a class="col" href="/html/index.html">
           <img id="htmlIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"> </a>
         <a class="col" href="/css/index.html">
-          <img id="cssIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"> </a>
+          <img id="cssIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="CSS logo"> </a>
         <a class="col" href="/js/index.html">
-          <img id="jsIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"> </a>
+          <img id="jsIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="JS logo"> </a>
       </div>
     </div>
 
+    <div id="homeText">
     <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
     <p class="text-center homepage"> Web Museum contains the main components of modern WEB development. <br>
       Choose the icon you'd like to explore, or scoll down.</h3>
-
-    <!-- <footer>
+    </div>
+      <!-- <footer>
       <p style="font-size: 2px;">Icons made by <a href="https://www.flaticon.com/authors/freepik"
           title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
       </p>
     </footer> -->
   </div>
+  <div id="bg-img" style=""></div>
+
 </body>
 
 
