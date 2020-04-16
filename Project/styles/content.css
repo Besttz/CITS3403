@@ -1,0 +1,32 @@
+p {
+    line-height: 2em;
+    font-size: larger;
+    font-weight: 200;
+
+}
+
+#homeText {
+    max-width: 1000px;
+}
+
+@media screen and (min-width: 601px) {
+    .home-icon {
+        max-width: 400px;
+        max-height: 60vh;
+      }
+      .content {
+        margin-top: 10vh;
+      }
+}
+
+
+@media screen and (max-width: 600px) {
+    .home-icon {
+
+        max-width: 250px;
+        max-height: 40vh;
+      }
+      .content {
+        margin-top: 2vh;
+      }
+}

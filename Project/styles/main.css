@@ -2,13 +2,11 @@
 h1 {
     font-weight: 100;
     /* color: #fafafa; */
-    padding-top: 10vh;
     letter-spacing:0.1em;
 
 }
 h2 {
     /* color: #fafafa; */
-    padding-top: 10vh;
     font-weight: 200;
     letter-spacing:0.1em;
 
@@ -56,3 +54,5 @@ p {
   .nav-item {
     margin-left: 50px;
   }
+
+  

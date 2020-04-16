@@ -11,20 +11,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/content.css">
   <script src="../scripts/html.js"></script>
   <script src="../scripts/content.js"></script>
   <style>
     body {
       color: #fdfdfd;
-      background-image: url(../media/red.jpg);
       margin-bottom: 60px;
+      
+    }
+    #h-sec-1 {
+      background-image: url(../media/red.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       -o-background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
     }
-
 
     #bg-img {
       position: fixed;
@@ -34,7 +37,7 @@
       height: 100vh;
       width: 100vw;
       z-index: -1;
-      
+
     }
 
     #headText,
@@ -44,14 +47,6 @@
       display: none;
     }
 
-    .home-icons {
-      padding-top: 10vh;
-    }
-
-    .home-icon {
-      max-width: 350px;
-      max-height: 30vh;
-    }
 
     
   </style>
@@ -91,23 +86,36 @@
     </div>
   </nav>
   <!--Contents-->
-  <div id="homeBody" class="container-fluid">
-    <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
-    <div class="container-fluid home-icons">
+  <div id="h-sec-1" class="container-fluid">
+    <div class="content container-fluid">
       <div class="row">
-        <div class="col">
-          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo"> </div>
+        <div class="col-sm-4">
+          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo">
         </div>
+
+        <div class="col-sm-8" id="homeText">
+          <h1 id="headText" class="text-center text-uppercase">HyperText Markup Language</h1>
+
+          <h2 class="text-center text-uppercase">The Origin of WEB</h2>
+          <p id="homeP" class="text-center homepage text-justify">"
+            HTML stands for HyperText Markup Language. It is the standard markup language used for Web pages, and it is
+            used to describe the structure of a Web page. We can say that it is the skeleton for the modern World Wide
+            Web.<br>
+            It consists of a series of elements,
+            the browser will display an HTML document by showing the contents of all elements.
+            Every element is represented by tags such as &lt;h1&gt; stands "heading", &lt;p&gt; stands "paragraph", and
+            so on."
+            <br>
+            In this journey, we will show you the history of HTML, and how it looks like, and how browsers use it to
+            generate visible webpages by some examples. Scroll down to continue!
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div id="homeText">
-      <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
-      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development.
-        <br>
-        Choose any icon above you'd like to exploreto start your journey.</h3>
-    </div>
+
   </div>
-  <div id="bg-img"></div>
+  <div id="h-sec-2"></div>
   <!--Footer-->
 
   <footer class="footer">
