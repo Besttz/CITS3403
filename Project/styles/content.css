@@ -9,14 +9,19 @@ p {
     max-width: 1000px;
 }
 
+.content {
+    padding-top: 10vh;
+  }
+
 @media screen and (min-width: 601px) {
     .home-icon {
         max-width: 400px;
         max-height: 60vh;
       }
       .content {
-        margin-top: 10vh;
+        padding-top: 35vh;
       }
+
 }
 
 
@@ -26,7 +31,7 @@ p {
         max-width: 250px;
         max-height: 40vh;
       }
-      .content {
-        margin-top: 2vh;
-      }
+    
 }
+
+

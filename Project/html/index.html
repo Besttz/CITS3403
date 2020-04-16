@@ -17,44 +17,44 @@
   <style>
     body {
       color: #fdfdfd;
-      margin-bottom: 60px;
-      
+      min-height: 100vh;
     }
-    #h-sec-1 {
-      background-image: url(../media/red.jpg);
+
+    #h-sec-1,
+    #h-sec-2,
+    #h-sec-3 {
       background-repeat: no-repeat;
       background-attachment: fixed;
       -o-background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
+      background-size: cover;
+      min-width: 100%;
+      min-height: 100vh;
     }
 
-    #bg-img {
-      position: fixed;
+    #h-sec-1 {
       background-image: url(../media/red.jpg);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      z-index: -1;
-
     }
 
-    #headText,
-    .home-icons,
+    #h-sec-2 {
+      background-image: url(../media/blue.jpg);
+    }
+
+    #h-sec-3 {
+      background-image: url(../media/yellow.jpg);
+    }
+
     #homeText,
-    #bg-img {
+    .home-icons {
       display: none;
     }
-
-
-    
   </style>
 </head>
 
 <body>
   <!--Nav Bar-->
-  <nav id="navbar" class="navbar navbar-expand-md navbar-dark justify-content-center">
+  <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark justify-content-center">
     <a class="navbar-brand" href="../index.html" style="font-weight: 800;">
       <img id="navicon" src="../media/favicon.svg" alt="Logo" style="width:25px;">
       WEB MUSEUM</a>
@@ -87,10 +87,10 @@
   </nav>
   <!--Contents-->
   <div id="h-sec-1" class="container-fluid">
-    <div class="content container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo">
+    <div class="content">
+      <div class="row ">
+        <div class="col-sm-4 home-icons">
+          <img id="htmlIcon" class="mx-auto home-icon d-block" src="../media/html.svg" alt="HTML logo">
         </div>
 
         <div class="col-sm-8" id="homeText">
@@ -115,7 +115,60 @@
 
 
   </div>
-  <div id="h-sec-2"></div>
+  <div id="h-sec-2">
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img id="htmlIcon2" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo">
+        </div>
+
+        <div class="col-sm-8" id="homeText2">
+          <h1 id="headText2" class="text-center text-uppercase">1HyperText Markup Language</h1>
+
+          <h2 class="text-center text-uppercase">The Origin of WEB</h2>
+          <p id="homeP2" class="text-center homepage text-justify">"
+            HTML stands for HyperText Markup Language. It is the standard markup language used for Web pages, and it is
+            used to describe the structure of a Web page. We can say that it is the skeleton for the modern World Wide
+            Web.<br>
+            It consists of a series of elements,
+            the browser will display an HTML document by showing the contents of all elements.
+            Every element is represented by tags such as &lt;h1&gt; stands "heading", &lt;p&gt; stands "paragraph", and
+            so on."
+            <br>
+            In this journey, we will show you the history of HTML, and how it looks like, and how browsers use it to
+            generate visible webpages by some examples. Scroll down to continue!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="h-sec-3">
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img id="htmlIcon3" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo">
+        </div>
+
+        <div class="col-sm-8" id="homeText3">
+          <h1 id="headText3" class="text-center text-uppercase">1HyperText Markup Language</h1>
+
+          <h2 class="text-center text-uppercase">The Origin of WEB</h2>
+          <p id="homeP3" class="text-center homepage text-justify">"
+            HTML stands for HyperText Markup Language. It is the standard markup language used for Web pages, and it is
+            used to describe the structure of a Web page. We can say that it is the skeleton for the modern World Wide
+            Web.<br>
+            It consists of a series of elements,
+            the browser will display an HTML document by showing the contents of all elements.
+            Every element is represented by tags such as &lt;h1&gt; stands "heading", &lt;p&gt; stands "paragraph", and
+            so on."
+            <br>
+            In this journey, we will show you the history of HTML, and how it looks like, and how browsers use it to
+            generate visible webpages by some examples. Scroll down to continue!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Footer-->
 
   <footer class="footer">
