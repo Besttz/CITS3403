@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <title>WEB MUSEUM</title>
+  <title>ABOUT AUTHOR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -10,12 +10,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles/main.css">
-  <script src="scripts/home.js"></script>
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../scripts/html.js"></script>
+  <script src="../scripts/content.js"></script>
   <style>
     body {
       color: #fdfdfd;
-      background-image: url(media/grey.jpg);
+      background-image: url(../media/red.jpg);
       margin-bottom: 60px;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -25,31 +26,14 @@
     }
 
 
-    img:hover {
-      transition: all 0.5s;
-      transform: scale(1.2);
-    }
-
-    img {
-      transform: scale(1);
-      transition: all 0.5s;
-    }
-
     #bg-img {
       position: fixed;
-      background-image: url(media/red.jpg);
+      background-image: url(../media/red.jpg);
       top: 0;
       left: 0;
       height: 100vh;
       width: 100vw;
       z-index: -1;
-      display: none;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-    }
     }
 
     #headText,
@@ -68,17 +52,15 @@
       max-height: 30vh;
     }
 
-    .nav-item {
-      margin-left: 50px;
-    }
+    
   </style>
 </head>
 
 <body>
   <!--Nav Bar-->
   <nav id="navbar" class="navbar navbar-expand-md navbar-dark justify-content-center">
-    <a class="navbar-brand" href="/index.html" style="font-weight: 800;">
-      <img id="navicon" src="media/favicon.svg" alt="Logo" style="width:25px;">
+    <a class="navbar-brand" href="../index.html" style="font-weight: 800;">
+      <img id="navicon" src="../media/favicon.svg" alt="Logo" style="width:25px;">
       WEB MUSEUM</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"> </span>
@@ -113,12 +95,8 @@
     <div class="container-fluid home-icons">
       <div class="row">
         <div class="col">
-          <img id="htmlIcon" class="mx-auto d-block home-icon" src="media/html.svg" alt="HTML logo"> </div>
-        <div class="col">
-          <img id="cssIcon" class="mx-auto d-block home-icon" src="media/css.svg" alt="CSS logo"> </div>
-        <div class="col">
-          <img id="jsIcon" class="mx-auto d-block home-icon" src="media/js.svg" alt="JS logo"> </div>
-      </div>
+          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo"> </div>
+        </div>
     </div>
 
     <div id="homeText">

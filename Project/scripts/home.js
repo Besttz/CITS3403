@@ -34,7 +34,7 @@ function iconOnHover(obj) {
             $("#bg-img").css("background-image", "url(media/blue.jpg)");
             $("#bg-img").fadeIn(300);
             setTimeout(function () {
-                $("body").css("color", "#222");
+                $("h1").css("color", "#222");
                 $("#navbar").removeClass("navbar-dark");
                 $("#navbar").addClass("navbar-light");
                 $("#navicon").attr("src", "media/favicon-dark.svg");
@@ -53,6 +53,7 @@ function iconOffHover() {
     $("#bg-img").fadeOut(300);
     setTimeout(function () { changeHead(defaultHead); }, 300);
     setTimeout(function () {
+        $("h1").css("color", "");
         $("body").css("color", "#fdfdfd");
         $("#navbar").removeClass("navbar-light");
         $("#navbar").addClass("navbar-dark");

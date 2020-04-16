@@ -39,11 +39,20 @@ p {
     font-weight: 400;
 
 }
-.home-icons {
-    padding-top: 10vh;
-}
 
-.home-icon {
-    max-width: 350px;
-    max-height: 30vh;
-}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: x-small;
+    font-weight: 300;
+    text-align: center;
+    opacity: 40%;
+
+  }
+
+  .nav-item {
+    margin-left: 50px;
+  }
