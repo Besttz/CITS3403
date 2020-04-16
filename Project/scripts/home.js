@@ -24,13 +24,19 @@ function iconOnHover(obj) {
             $("#bg-img").fadeIn(300);
             setTimeout(function () {
                 $("body").css("color", "#222");
+                $("#navbar").removeClass("navbar-dark");
+                $("#navbar").addClass("navbar-light");
             }, 300);
 
             break;
         case js:
             $("#bg-img").css("background-image", "url(media/blue.jpg)");
             $("#bg-img").fadeIn(300);
-            setTimeout(function () { $("body").css("color", "#222"); }, 300);
+            setTimeout(function () {
+                $("body").css("color", "#222");
+                $("#navbar").removeClass("navbar-dark");
+                $("#navbar").addClass("navbar-light");
+            }, 300);
             break;
         default:
             break;
@@ -44,7 +50,11 @@ function iconOffHover() {
     $("#headText").fadeOut(300);
     $("#bg-img").fadeOut(300);
     setTimeout(function () { changeHead(defaultHead); }, 300);
-    setTimeout(function () { $("body").css("color", "#fdfdfd"); }, 300);
+    setTimeout(function () {
+        $("body").css("color", "#fdfdfd");
+        $("#navbar").removeClass("navbar-light");
+        $("#navbar").addClass("navbar-dark");
+    }, 300);
     $("#headText").fadeIn(300);
 }
 
