@@ -13,6 +13,19 @@ p {
     padding-top: 10vh;
   }
 
+  #h-sec-1,
+  #h-sec-2,
+  #h-sec-3 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  
 @media screen and (min-width: 601px) {
     .home-icon {
         max-width: 400px;
@@ -34,4 +47,13 @@ p {
     
 }
 
+#htmlIcon:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+  }
+
+  #htmlIcon {
+    transform: scale(1);
+    transition: all 0.5s;
+  }
 
