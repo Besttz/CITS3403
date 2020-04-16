@@ -26,6 +26,7 @@ function iconOnHover(obj) {
                 $("body").css("color", "#222");
                 $("#navbar").removeClass("navbar-dark");
                 $("#navbar").addClass("navbar-light");
+                $("#navicon").attr("src", "media/favicon-dark.svg");
             }, 300);
 
             break;
@@ -36,6 +37,7 @@ function iconOnHover(obj) {
                 $("body").css("color", "#222");
                 $("#navbar").removeClass("navbar-dark");
                 $("#navbar").addClass("navbar-light");
+                $("#navicon").attr("src", "media/favicon-dark.svg");
             }, 300);
             break;
         default:
@@ -54,6 +56,7 @@ function iconOffHover() {
         $("body").css("color", "#fdfdfd");
         $("#navbar").removeClass("navbar-light");
         $("#navbar").addClass("navbar-dark");
+        $("#navicon").attr("src", "media/favicon.svg");
     }, 300);
     $("#headText").fadeIn(300);
 }
@@ -75,6 +78,7 @@ function iconOnClick(obj) {
     }, 1200);
 
     setTimeout("window.location.href = '/" + obj + "/index.html'", 1500);
+
 }
 
 $(document).ready(function () {
