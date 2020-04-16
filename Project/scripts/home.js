@@ -56,15 +56,15 @@ function iconOnClick(obj) {
     $("#homeP").fadeIn(100);
     setTimeout(function () {
         document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery..";
-    }, 300);
+    }, 400);
     setTimeout(function () {
         document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery...";
-    }, 700);
+    }, 900);
     setTimeout(function () {
         document.getElementById("homeP").innerHTML = "Departing to " + obj + " gallery....";
-    }, 900);
+    }, 1200);
 
-    setTimeout("window.location.href = '/" + obj + "/index.html'", 1000);
+    setTimeout("window.location.href = '/" + obj + "/index.html'", 1500);
 }
 
 $(document).ready(function () {

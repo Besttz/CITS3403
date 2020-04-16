@@ -16,7 +16,13 @@
     body {
       color: #fdfdfd;
       background-image: url(media/grey.jpg);
-      height: 100vh;
+      /* height: 100vh; */
+      margin-bottom: 60px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
     }
 
     img:hover {
@@ -44,6 +50,18 @@
     #homeText,
     #bg-img {
       display: none;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 20px;
+      font-size: x-small;
+      font-weight: 300;
+      text-align: center;
+      opacity: 40%;
+
     }
   </style>
 </head>
@@ -73,7 +91,7 @@
   </nav>
   <!--Contents-->
   <div id="homeBody" class="container-fluid" ">
-    <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
+    <h1 id=" headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
     <!-- <p>The Basic Components of WEB.</p> -->
 
     <div class="container-fluid home-icons">
@@ -89,8 +107,9 @@
 
     <div id="homeText">
       <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
-      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development. <br>
-        Choose the icon you'd like to explore, or scoll down.</h3>
+      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development.
+        <br>
+        Choose any icon above you'd like to exploreto start your journey.</h3>
     </div>
     <!-- <footer>
       <p style="font-size: 2px;">Icons made by <a href="https://www.flaticon.com/authors/freepik"
@@ -99,6 +118,13 @@
     </footer> -->
   </div>
   <div id="bg-img"></div>
+  <!--Footer-->
+
+  <footer class="footer">
+    <div class="container text-center">
+      Copyright © 2012-2020 <a href="http://tommy.nz" style="color: #f0f0f0;">Besttz</a>. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 
