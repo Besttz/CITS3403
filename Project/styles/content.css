@@ -15,25 +15,25 @@ p {
 
   }
 
-  #h-sec-1,
-  #h-sec-2,
-  #h-sec-3 {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100vh;
-  }
+#h-sec-1,
+#h-sec-2,
+#h-sec-3 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100vh;
+}
   
 @media screen and (min-width: 601px) {
     .home-icon {
         max-width: 400px;
         max-height: 60vh;
       }
-      .content {
+    .content {
         /* padding-top: 15vh; */
       }
 
@@ -87,6 +87,33 @@ p {
     position: relative;
     background-color: inherit;
     width: 50%;
+    z-index: 1;
+    overflow: hidden;
+
+
+  }
+
+
+  .timeline-content{
+
+  }
+  .timeline-content:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: -20px;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px); 
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .timelinebox::after {
@@ -96,7 +123,6 @@ p {
     height: 15px;
     right: -17px;
     background-color: #F9F7EF;
-    /* border: 4px solid #FF9F55; */
     top: 15px;
     border-radius: 50%;
     z-index: 1;

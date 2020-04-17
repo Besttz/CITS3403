@@ -4,13 +4,13 @@ $(document).ready(function () {
     setTimeout(function () { $("#homeText").fadeIn(300); }, 400);
     setTimeout(function () { $("#homeP").fadeIn(300); }, 500);
 
-    $("#card").hover(function () {
-        iconOnHover();
-    },
-        function () {
-            iconOffHover();
-        }
-    );
+    // $("#card").hover(function () {
+    //     iconOnHover();
+    // },
+    //     function () {
+    //         iconOffHover();
+    //     }
+    // );
 
     $(document).keydown(function (ev) {
         var event = window.event || ev;
