@@ -10,4 +10,14 @@ $(document).ready(function () {
             iconOffHover();
         }
     );
+
+    $(document).keydown(function (ev) {
+        var event = window.event || ev;
+        var code = event.keyCode || event.which;
+        if (code == 37)
+            window.location.href = $("#prev").attr("href");
+        if (code == 39)
+            window.location.href = $("#next").attr("href");
+    });
+
 });
