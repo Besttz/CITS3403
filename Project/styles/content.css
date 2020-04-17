@@ -32,7 +32,7 @@ p {
         max-height: 60vh;
       }
       .content {
-        padding-top: 35vh;
+        padding-top: 15vh;
       }
 
 }
@@ -57,3 +57,8 @@ p {
     transition: all 0.5s;
   }
 
+
+  .htmlCode {
+    width: 80%;
+    margin-left: 10%;
+  }
