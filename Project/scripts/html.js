@@ -1,3 +1,5 @@
+clicked = false;
+
 function changeHead(id) {
     var txt = "";
     switch (id) {
@@ -30,15 +32,19 @@ function changeHead(id) {
             break;
 
         default:
+
             txt = "Continue click other blocks!"
             break;
     }
-    document.getElementById("headText2").innerHTML = txt;
+    if (!clicked || id != -1) {
+        document.getElementById("headText2").innerHTML = txt;
+    }
 }
 
 
 function cardOnHover(id) {
-    $("#headText2").stop(true,false);
+
+    $("#headText2").stop(true, false);
     $("#headText2").fadeOut(150);
     setTimeout(function () {
         changeHead(id);
@@ -47,7 +53,8 @@ function cardOnHover(id) {
 }
 
 function cardOnClick(id) {
-    $(".h-sec-2-p").stop(true,true);
+    clicked = true;
+    $(".h-sec-2-p").stop(true, true);
     $(".h-sec-2-p").fadeOut(150);
 
     setTimeout(function () {
@@ -56,47 +63,47 @@ function cardOnClick(id) {
                 $("#htmlP").fadeIn(150);
                 break;
             case 1:
-                $("#htmlP").css("display","none");
+                $("#htmlP").css("display", "none");
                 $("#headP").fadeIn(150);
                 break;
             case 2:
-                $("#htmlP").css("display","none");
-                $("#headP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#headP").css("display", "none");
                 $("#titleP").fadeIn(150);
                 break;
             case 3:
-                $("#htmlP").css("display","none");
-                $("#headP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#headP").css("display", "none");
                 $("#linkP").fadeIn(150);
                 break;
             case 4:
-                $("#htmlP").css("display","none");
+                $("#htmlP").css("display", "none");
                 $("#bodyP").fadeIn(150);
                 break;
             case 5:
-                $("#htmlP").css("display","none");
-                $("#bodyP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#bodyP").css("display", "none");
                 $("#headingP").fadeIn(150);
                 break;
             case 6:
-                $("#htmlP").css("display","none");
-                $("#bodyP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#bodyP").css("display", "none");
                 $("#headingP").fadeIn(150);
                 break;
             case 7:
-                $("#htmlP").css("display","none");
-                $("#bodyP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#bodyP").css("display", "none");
                 $("#pP").fadeIn(150);
                 break;
             case 8:
-                $("#htmlP").css("display","none");
-                $("#bodyP").css("display","none");
-                $("#pP").css("display","none");
+                $("#htmlP").css("display", "none");
+                $("#bodyP").css("display", "none");
+                $("#pP").css("display", "none");
                 $("#imgP").fadeIn(150);
                 break;
 
         }
-    }, 150+id*2);
+    }, 150 + id * 2);
 
 }
 
