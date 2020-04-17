@@ -6,11 +6,11 @@ p {
 }
 
 #homeText {
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 .content {
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
   }
 
   #h-sec-1,
@@ -32,7 +32,7 @@ p {
         max-height: 60vh;
       }
       .content {
-        padding-top: 15vh;
+        /* padding-top: 15vh; */
       }
 
 }
