@@ -108,7 +108,15 @@ function cardOnClick(id) {
 
 }
 
+function timeLineOnClick(id) {
+    $(".h-sec-3-p").stop(true, true);
+    $(".h-sec-3-p").fadeOut(150);
 
+    setTimeout(function () {
+        $("#historyp"+id).fadeIn(150);
+    }, 150);
+
+}
 
 $(document).ready(function () {
 
@@ -205,5 +213,28 @@ $(document).ready(function () {
         cardOnClick(8);
     }
     );
-
+    $("#history0").click(function () {
+        timeLineOnClick(0);
+    }
+    );
+    $("#history1").click(function () {
+        timeLineOnClick(1);
+    }
+    );
+    $("#history2").click(function () {
+        timeLineOnClick(2);
+    }
+    );
+    $("#history3").click(function () {
+        timeLineOnClick(3);
+    }
+    );
+    $("#history4").click(function () {
+        timeLineOnClick(4);
+    }
+    );
+    $("#history5").click(function () {
+        timeLineOnClick(5);
+    }
+    );
 });
