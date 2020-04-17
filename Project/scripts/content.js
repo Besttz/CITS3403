@@ -1,3 +1,4 @@
+now = 1;
 $(document).ready(function () {
     setTimeout(function () { $(".home-icons").fadeIn(300); }, 300);
     setTimeout(function () { $("#homeText").fadeIn(300); }, 400);
@@ -14,10 +15,17 @@ $(document).ready(function () {
     $(document).keydown(function (ev) {
         var event = window.event || ev;
         var code = event.keyCode || event.which;
-        if (code == 37)
-            window.location.href = $("#prev").attr("href");
-        if (code == 39)
-            window.location.href = $("#next").attr("href");
+        if (code == 37 && now != 1)
+        {
+            window.location.href = $("#prev"+now).attr("href");
+            now--;
+        }
+        if (code == 39&& now <max) {
+
+            window.location.href = $("#next"+now).attr("href");
+            now++;
+        }
+
     });
 
 });

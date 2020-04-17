@@ -1,4 +1,5 @@
 clicked = false;
+max = 4;
 
 function changeHead(id) {
     var txt = "";
