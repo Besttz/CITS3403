@@ -94,7 +94,7 @@
           <h1 id="headText" class="text-center text-uppercase">HyperText Markup Language</h1>
 
           <h2 class="text-center text-uppercase">The skeleton of WEB</h2>
-          <p id="homeP" class="text-center homepage text-justify">
+          <p id="homeP" class="text-center  text-justify">
             HTML stands for HyperText Markup Language. It is the standard markup language used for Web pages, and it is
             used to describe the structure of a Web page. We can say that it is the skeleton for the modern World Wide
             Web.<br>
@@ -132,7 +132,7 @@
                     </div>
                     <div id="hCode3" class="card  " style="background-color:#5E96CD ;">
                       <div class=" card-body">
-                        &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;
+                        &lt;meta charset="utf-8"&gt;
                       </div>
                     </div>
 
@@ -181,13 +181,58 @@
         </div>
 
         <div class="col-lg-6" id="homeText2">
-          <h1 id="headText2" class="text-center text-uppercase">Now let's look at some code as example</h1>
+          <h1 id="headText2" class="text-center text-uppercase">Now let's look at some code</h1>
 
-          <p id="homeP2" class="text-center homepage text-justify">
-            Click any block of code to see how it works!
+          <p id="homeP2" class="h-sec-2-p text-center text-justify">
+            Although HTML is not a programming language, the program running behind is usually written in Javascript
+            which we will see later. HTML simply tells the browser what does it have in the documents. It uses tags to
+            make the document a tree structure, you can see the whole structure of a basic but working webpage.<br>
+            <strong> Click any block of nodes to see how it works!</strong>
             <br>
             <a href="examples/1.html">Check how this example works in your browser.</a>
           </p>
+          <p id="htmlP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            This is the root node of the HTML tree structure. Every element contained by this HTML document is inside
+            this element.<br>
+            The &lt;!DOCTYPE html&gt; tag specifies the particular SGML Document-Type Definition, telling the browser
+            this is an HTML document. lang="en-US" property tells the browser the language of this document.
+          </p>
+          <p id="headP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            One of the two directly children of the HTML element. The content in the HEAD element will now display to
+            users. It only provides information about the document, it should always contain two elements, a title and a
+            meta.
+
+          </p>
+          <p id="titleP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            It specifies the title of this document. It is usually displayed at the top of the browser window, or at the
+            tab bar.
+
+          </p>
+          <p id="linkP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            It specifies the character set used for this document. The most popular one used for the Web is the UTF-8.
+            <br>
+            Setting the wrong character set may make the content recognizable.
+          </p>
+          <p id="bodyP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            The body element provides the contents of this document, everything you can see inside the browser is inside
+            this tag.
+
+            <p id="headingP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+              There are usually headings before the sections of paragraphed text. There are six levels of headings in
+              HTML, by using these tags, the browser will use larger font size and boldface font, &lt;h1&gt; is the
+              highest-level heading.
+
+            </p>
+            <p id="pP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+              P stands for the paragraph. The browser usually puts words to fit the lines in the window for displaying
+              text like other word processor programs.
+
+            </p>
+            <p id="imgP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+              As the name of this tag, it is used for inserting images into the display of a document. The source file
+              for this image is specified in an element. The browser will download the image file from "
+              ../../media/html.png" and display in the window.
+            </p>
         </div>
       </div>
     </div>
@@ -204,7 +249,7 @@
           <h1 id="headText3" class="text-center text-uppercase">1HyperText Markup Language</h1>
 
           <h2 class="text-center text-uppercase">The Origin of WEB</h2>
-          <p id="homeP3" class="text-center homepage text-justify">"
+          <p id="homeP3" class="text-center  text-justify">"
             HTML stands for HyperText Markup Language. It is the standard markup language used for Web pages, and it is
             used to describe the structure of a Web page. We can say that it is the skeleton for the modern World Wide
             Web.<br>

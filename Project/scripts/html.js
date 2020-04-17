@@ -11,7 +11,7 @@ function changeHead(id) {
             txt = "&lt;title&gt;";
             break;
         case 3:
-            txt = "&lt;link&gt;";
+            txt = "&lt;meta&gt;";
             break;
         case 4:
             txt = "&lt;body&gt;";
@@ -36,65 +36,67 @@ function changeHead(id) {
     document.getElementById("headText2").innerHTML = txt;
 }
 
-function changeP(id3) {
-    var txt = "";
-    switch (id3) {
-        case 0:
-            txt = "This is the html tag. " +
-                "The most outside element of any html documents.<br>" +
-                "T sasxgfdcxgany html documents." +
-                "The moswrserdftgyuhijok documents." +
-                "The most fjdhfsgdslvevovldkfug ijo nts.";
-            break;
-        case 1:
-            txt = "&lt;head&gt;";
-            break;
-        case 2:
-            txt = "TESTTESTTEST！！！";
-            break;
-        case 3:
-            txt = "&lt;link&gt;";
-            break;
-        case 4:
-            txt = "&lt;body&gt;";
-            break;
-        case 5:
-            txt = "&lt;h1-h6&gt;";
-            break;
-        case 6:
-            txt = "&lt;h1-h6&gt;";
-            break;
-        case 7:
-            txt = "&lt;p&gt;";
-            break;
-        case 8:
-            txt = "&lt;img&gt;";
-            break;
-
-        default:
-            txt = "Continue click other blocks!"
-            break;
-    }
-    document.getElementById("homeP2").innerHTML = txt;
-}
-
 
 function cardOnHover(id) {
-    $("#headText2").stop();
-    $("#headText2").fadeOut(300);
+    $("#headText2").stop(true,false);
+    $("#headText2").fadeOut(150);
     setTimeout(function () {
         changeHead(id);
-    }, 300);
-    $("#headText2").fadeIn(300);
+    }, 150);
+    $("#headText2").fadeIn(150);
 }
 
-function cardOnClick(id2) {
-    $("#homeP2").stop();
-    $("#homeP2").fadeOut(300);
+function cardOnClick(id) {
+    $(".h-sec-2-p").stop(true,true);
+    $(".h-sec-2-p").fadeOut(150);
+
     setTimeout(function () {
-        changeP(id2);
-    }, 300);
-    $("#homeP2").fadeIn(300);
+        switch (id) {
+            case 0:
+                $("#htmlP").fadeIn(150);
+                break;
+            case 1:
+                $("#htmlP").css("display","none");
+                $("#headP").fadeIn(150);
+                break;
+            case 2:
+                $("#htmlP").css("display","none");
+                $("#headP").css("display","none");
+                $("#titleP").fadeIn(150);
+                break;
+            case 3:
+                $("#htmlP").css("display","none");
+                $("#headP").css("display","none");
+                $("#linkP").fadeIn(150);
+                break;
+            case 4:
+                $("#htmlP").css("display","none");
+                $("#bodyP").fadeIn(150);
+                break;
+            case 5:
+                $("#htmlP").css("display","none");
+                $("#bodyP").css("display","none");
+                $("#headingP").fadeIn(150);
+                break;
+            case 6:
+                $("#htmlP").css("display","none");
+                $("#bodyP").css("display","none");
+                $("#headingP").fadeIn(150);
+                break;
+            case 7:
+                $("#htmlP").css("display","none");
+                $("#bodyP").css("display","none");
+                $("#pP").fadeIn(150);
+                break;
+            case 8:
+                $("#htmlP").css("display","none");
+                $("#bodyP").css("display","none");
+                $("#pP").css("display","none");
+                $("#imgP").fadeIn(150);
+                break;
+
+        }
+    }, 150+id*2);
 
 }
 
@@ -176,23 +178,23 @@ $(document).ready(function () {
     }
     );
     $("#hCode4").click(function () {
-        cardOnClick(0);
+        cardOnClick(4);
     }
     );
     $("#hCode5").click(function () {
-        cardOnClick(0);
+        cardOnClick(5);
     }
     );
     $("#hCode6").click(function () {
-        cardOnClick(0);
+        cardOnClick(6);
     }
     );
     $("#hCode7").click(function () {
-        cardOnClick(0);
+        cardOnClick(7);
     }
     );
     $("#hCode8").click(function () {
-        cardOnClick(0);
+        cardOnClick(8);
     }
     );
 
