@@ -116,6 +116,31 @@ function timeLineOnClick(id) {
         $("#historyp"+id).fadeIn(150);
     }, 150);
 
+    var txt = "";
+    switch (id) {
+        case 0:
+            txt = "&lt;html&gt;";
+            break;
+        case 1:
+            txt = "&lt;head&gt;";
+            break;
+        case 2:
+            txt = "&lt;title&gt;";
+            break;
+        case 3:
+            txt = "&lt;meta&gt;";
+            break;
+        case 4:
+            txt = "&lt;body&gt;";
+            break;
+        case 5:
+            txt = "&lt;h1-h6&gt;";
+            break;
+        
+    }
+    document.getElementById("h2-3").innerHTML = txt;
+
+
 }
 
 $(document).ready(function () {
