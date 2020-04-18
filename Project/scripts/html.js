@@ -3,6 +3,7 @@ max = 4;
 exampleStart = false;
 headADD = false;
 bodyADD = false;
+exampleClicked = 0;
 
 function changeHead(id) {
     var txt = "";
@@ -146,11 +147,13 @@ function timeLineOnClick(id) {
 function modalMaker(buttonID) {
     switch (buttonID) {
         case 2:
-            // $("#htmlExampleModalHead").innerHTML="")
+            document.getElementById("htmlExampleModalHead").innerHTML = "Title";
             if (!headADD) {
+                exampleClicked = 0;
                 document.getElementById("htmlExampleModalBody").innerHTML = "Title element must be added inside HEAD element.<br> Please check again.";
             } else {
                 document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your title.";
+                exampleClicked = 2;
                 $("#htmlExampleModalInput1").removeClass("d-none");
             }
 
@@ -397,6 +400,25 @@ $(document).ready(function () {
         } else {
             modalMaker(7);
             $("#myModal").modal();
+        }
+    }
+    );
+
+    $("#htmlExampleModalOK").click(function () {
+        switch (exampleClicked) {
+            case 2:
+                $("#htmlExampleModalInput1").addClass("d-none");
+
+                document.getElementById("hCode2content").innerHTML = "&lt;title&gt;" +
+                    document.getElementById("htmlExampleModalInput1").value + "&lt;/title&gt;";
+                $("#hECode2").fadeIn(500);
+                document.getElementById("HETitle").innerHTML = document.getElementById("htmlExampleModalInput1").value;
+                document.getElementById("htmlExampleModalInput1").value = "";
+
+                break;
+
+            default:
+                break;
         }
     }
     );
