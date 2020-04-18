@@ -176,3 +176,11 @@ p {
 
       margin-bottom: 5rem;
   }
+
+  .modal {
+      color: black;
+  }
+/* 
+  .modal,h4 {
+      display: none;
+  } */

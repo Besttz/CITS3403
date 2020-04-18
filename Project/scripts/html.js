@@ -1,6 +1,8 @@
 clicked = false;
 max = 4;
 exampleStart = false;
+headADD = false;
+bodyADD = false;
 
 function changeHead(id) {
     var txt = "";
@@ -141,6 +143,44 @@ function timeLineOnClick(id) {
 
 }
 
+function modalMaker(buttonID) {
+    switch (buttonID) {
+        case 2:
+            // $("#htmlExampleModalHead").innerHTML="")
+            if (!headADD) {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Title element must be added inside HEAD element.<br> Please check again.";
+            } else {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your title.";
+                $("#htmlExampleModalInput1").removeClass("d-none");
+            }
+
+            break;
+        case 3:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Body";
+
+
+            break;
+        case 4:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Heading";
+
+            break;
+        case 5:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Paragraph";
+
+            break;
+        case 6:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Table";
+
+            break;
+        case 7:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Image";
+
+            break;
+        default:
+            break;
+    }
+}
+
 $(document).ready(function () {
 
     $("#hCode0").hover(function () {
@@ -262,13 +302,12 @@ $(document).ready(function () {
             $("#HExampleArea").addClass("col-lg-6");
             $("#HECode").css("display", "");
             $("#HExampleWelcome").fadeOut(300);
-            // $("#HExampleWelcome").css("display","none");
             setTimeout(function () {
                 $("#HExampleDisplay").css("background-color", "white");
             }, 200);
 
         } else {
-            $('[data-toggle="popover"]').popover();
+            $("#B0").popover();
         }
     }
     );
@@ -277,8 +316,11 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
             $("#HExampleWelcomeHint").fadeOut(500);
             $("#HExampleWelcomeHint").fadeIn(500);
-
+        } else if (!headADD) {
+            headADD = true;
+            $("#hECode1").fadeIn(500);
         } else {
+            $("#B1").popover();
         }
     }
     );
@@ -287,8 +329,9 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
             $("#HExampleWelcomeHint").fadeOut(500);
             $("#HExampleWelcomeHint").fadeIn(500);
-
         } else {
+            modalMaker(2);
+            $("#myModal").modal();
         }
     }
     );
@@ -298,7 +341,14 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeOut(500);
             $("#HExampleWelcomeHint").fadeIn(500);
 
+        } else if (!bodyADD) {
+            bodyADD = true;
+            $("#hECode4").fadeIn(500);
         } else {
+            // modalMaker(3);
+            // $("#myModal").modal();
+            $("#B3").popover();
+
         }
     }
     );
@@ -309,6 +359,8 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
 
         } else {
+            modalMaker(4);
+            $("#myModal").modal();
         }
     }
     );
@@ -319,6 +371,8 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
 
         } else {
+            modalMaker(5);
+            $("#myModal").modal();
         }
     }
     );
@@ -329,6 +383,8 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
 
         } else {
+            modalMaker(6);
+            $("#myModal").modal();
         }
     }
     );
@@ -339,6 +395,8 @@ $(document).ready(function () {
             $("#HExampleWelcomeHint").fadeIn(500);
 
         } else {
+            modalMaker(7);
+            $("#myModal").modal();
         }
     }
     );

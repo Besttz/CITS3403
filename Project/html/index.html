@@ -313,29 +313,61 @@
       <div id="HButton" class="ExampleButton text-center">
         <button id="B0" type="button" class="btn btn-outline-warning text-white"
         data-toggle="popover" title="" data-content="Only one HTML node needed in one document">HTML</button>
-        <button id="B1" type="button" class="btn btn-outline-warning text-white">HEAD</button>
-        <button id="B2" type="button" class="btn btn-outline-warning text-white">TITLE</button>
-        <button id="B3" type="button" class="btn btn-outline-warning text-white">BODY</button>
+        <button id="B1" type="button" class="btn btn-outline-warning text-white"
+        data-toggle="popover" title="" data-content="Only one HEAD node needed in one document">HEAD</button>
+        <button id="B2" type="button" class="btn btn-outline-warning text-white"
+        >TITLE</button>
+        <button id="B3" type="button" class="btn btn-outline-warning text-white"
+        data-toggle="popover" title="" data-content="Only one BODY node needed in one document">BODY</button>
         <button id="B4" type="button" class="btn btn-outline-warning text-white">HEADING</button>
         <button id="B5" type="button" class="btn btn-outline-warning text-white">P</button>
         <button id="B6" type="button" class="btn btn-outline-warning text-white">TABLE</button>
         <button id="B7" type="button" class="btn btn-outline-warning text-white">IMAGE</button>
+        <div class="modal fade " id="myModal">
+          <div class="modal-dialog font-shadow-none">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 id="htmlExampleModalHead"class="modal-title">Title</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div id="htmlExampleModalBody"></div> 
+                <div class="form-group">
+                  <input type="text" class="form-control d-none" id="htmlExampleModalInput1">
+                </div>
+                <!-- <input type="text" class="form-control" id="usr"> -->
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="row">
         <div id="HECode" class="col-lg-6 font-shadow-none" style="display: none;">
           <div class="htmlCode">
-            <div id="hCode0" class="card rounded mb-10 " style="background-color:rgba(239, 71, 111, 0.5)">
+            <div id="hECode0" class="card rounded mb-10 " style="background-color:rgba(239, 71, 111, 0.5)">
               <div class="card-body">
                 &lt;!DOCTYPE html&gt;<br>
                 &lt;html lang="en-US"&gt;<br>
-                <div id="hCode1" class="card rounded mb-10 " style="display: none;background-color:#077B88 ;">
+                <div id="hECode1" class="card rounded mb-10 " style="display: none;background-color:#077B88 ;">
                   <div class="card-body">&lt;head&gt;
-                    <div id="hCode2" class="card" style="background-color:#C59893 ;">
+                    <div id="hECode2" class="card" style="display: none;background-color:#C59893 ;">
                       <div class="card-body">
                         &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
                       </div>
                     </div>
-                    <div id="hCode3" class="card  " style="background-color:#5E96CD ;">
+                    <div id="hECode3" class="card  " style="display: none;background-color:#5E96CD ;">
                       <div class=" card-body">
                         &lt;meta charset="utf-8"&gt;
                       </div>
@@ -345,25 +377,25 @@
                   </div>
                 </div>
                 <br>
-                <div id="hCode4" class="card " style="display: none;background-color:#6D6875 ;">
+                <div id="hECode4" class="card " style="display: none;background-color:#6D6875 ;">
                   <div id="" class=" card-body">
-                    &lt;body&gt;<br>
+                    &lt;body&gt;
 
-                    <div id="hCode5" class="card  " style="background-color:#5E96CD ;">
+                    <div id="hECode5" class="card  " style="display: none;background-color:#5E96CD ;">
                       <div class=" card-body">
                         &lt;h1&gt;
                         Hi! Welcome to HTML EXAMPLE 1！
                         &lt;/h1&gt;
                       </div>
                     </div>
-                    <div id="hCode6" class="card  " style="background-color:#3D4C5F ;">
+                    <div id="hECode6" class="card  " style="display: none;background-color:#3D4C5F ;">
                       <div class=" card-body">
                         &lt;h3&gt;
                         This is the most basic html document.
                         &lt;/h3&gt;
                       </div>
                     </div>
-                    <div id="hCode7" class="card  " style="background-color:#9DC6CA ;">
+                    <div id="hECode7" class="card  " style="display: none;background-color:#9DC6CA ;">
                       <div class=" card-body">
                         &lt;p&gt;<br>
                         Here is the main paragraph of this document with an image below.<br>
@@ -374,7 +406,7 @@
                         &lt;/p&gt;
                       </div>
                     </div>
-
+                    &lt;/body&gt;
                   </div>
                 </div>
                 <br>
