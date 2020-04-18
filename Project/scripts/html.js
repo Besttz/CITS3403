@@ -119,19 +119,19 @@ function timeLineOnClick(id) {
     var txt = "";
     switch (id) {
         case 0:
-            txt = "Tim Berners-Lee created HTML.";
+            txt = "Tim Berners-Lee created HTML";
             break;
         case 1:
-            txt = "&lt;head&gt;";
+            txt = "Mosaic 1.0 and W3C";
             break;
         case 2:
-            txt = "&lt;title&gt;";
+            txt = "HTML 4.0 and XML";
             break;
         case 3:
-            txt = "&lt;meta&gt;";
+            txt = "XHTML and Web 2.0";
             break;
         case 4:
-            txt = "&lt;body&gt;";
+            txt = "HTML 5 and morden WEB";
             break;
         
     }

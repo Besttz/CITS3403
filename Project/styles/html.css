@@ -29,6 +29,14 @@
     background-image: url(../media/red3.jpg);
   }
 
+  #h-sec-4 {
+    background-image: url(../media/red5.jpg);
+  }
+
+  #h-sec-END{
+    background-image: url(../media/grey.jpg);
+  }
+
   #homeText,
   .home-icons {
     display: none;
@@ -50,7 +58,7 @@
 
   h-sec-3, .img-fluid:hover {
       transition: all 0.5s;
-    transform: scale(2.2);
+    transform: scale(2.5);
 }
 h-sec-3, .img-fluid {
     transition: all 0.5s;

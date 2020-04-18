@@ -17,7 +17,8 @@ p {
 
 #h-sec-1,
 #h-sec-2,
-#h-sec-3 {
+#h-sec-3,
+#h-sec-4 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
@@ -27,6 +28,17 @@ p {
   min-width: 100%;
   min-height: 100vh;
 }
+
+#h-sec-END{
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 35vh;
+  }
   
 @media screen and (min-width: 601px) {
     .home-icon {
