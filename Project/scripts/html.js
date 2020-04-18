@@ -269,25 +269,77 @@ $(document).ready(function () {
 
         } else {
             $('[data-toggle="popover"]').popover();
-
         }
-        timeLineOnClick(0);
     }
     );
     $("#B1").click(function () {
-        timeLineOnClick(1);
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
     }
     );
     $("#B2").click(function () {
-        timeLineOnClick(2);
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
     }
     );
     $("#B3").click(function () {
-        timeLineOnClick(3);
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
     }
     );
     $("#B4").click(function () {
-        timeLineOnClick(4);
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
+    }
+    );
+    $("#B5").click(function () {
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
+    }
+    );
+    $("#B6").click(function () {
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
+    }
+    );
+    $("#B7").click(function () {
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else {
+        }
     }
     );
 });
