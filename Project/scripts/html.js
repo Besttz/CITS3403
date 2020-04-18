@@ -119,7 +119,7 @@ function timeLineOnClick(id) {
     var txt = "";
     switch (id) {
         case 0:
-            txt = "&lt;html&gt;";
+            txt = "Tim Berners-Lee created HTML.";
             break;
         case 1:
             txt = "&lt;head&gt;";
@@ -132,9 +132,6 @@ function timeLineOnClick(id) {
             break;
         case 4:
             txt = "&lt;body&gt;";
-            break;
-        case 5:
-            txt = "&lt;h1-h6&gt;";
             break;
         
     }
@@ -256,10 +253,6 @@ $(document).ready(function () {
     );
     $("#history4").click(function () {
         timeLineOnClick(4);
-    }
-    );
-    $("#history5").click(function () {
-        timeLineOnClick(5);
     }
     );
 });

@@ -48,4 +48,16 @@
     min-height: 100vh;
   }
 
-  
+  h-sec-3, .img-fluid:hover {
+      transition: all 0.5s;
+    transform: scale(2.2);
+}
+h-sec-3, .img-fluid {
+    transition: all 0.5s;
+  transform: scale(1);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #FFFFFF;
+  margin: 1rem;
+
+  max-height: 16rem;
+}
