@@ -1,5 +1,6 @@
 clicked = false;
 max = 4;
+exampleStart = false;
 
 function changeHead(id) {
     var txt = "";
@@ -252,6 +253,39 @@ $(document).ready(function () {
     }
     );
     $("#history4").click(function () {
+        timeLineOnClick(4);
+    }
+    );
+    $("#B0").click(function () {
+        if (!exampleStart) {
+            exampleStart = true;
+            $("#HExampleArea").addClass("col-lg-6");
+            $("#HECode").css("display","");
+            $("#HExampleWelcome").fadeOut(300);
+            // $("#HExampleWelcome").css("display","none");
+            setTimeout(function () {
+            $("#HExampleDisplay").css("background-color","white");
+            },200);
+
+        } else {
+            
+        }
+        timeLineOnClick(0);
+    }
+    );
+    $("#B1").click(function () {
+        timeLineOnClick(1);
+    }
+    );
+    $("#B2").click(function () {
+        timeLineOnClick(2);
+    }
+    );
+    $("#B3").click(function () {
+        timeLineOnClick(3);
+    }
+    );
+    $("#B4").click(function () {
         timeLineOnClick(4);
     }
     );

@@ -2,7 +2,6 @@ p {
     line-height: 2em;
     font-size: larger;
     font-weight: 200;
-
 }
 
 #homeText,#homeText2 {
@@ -172,7 +171,8 @@ p {
     font-size: x-large;
   }
 
-  .timeline-content p {
-    /* font-size: x-large; */
-  }
 
+  .ExampleButton{
+
+      margin-bottom: 5rem;
+  }
