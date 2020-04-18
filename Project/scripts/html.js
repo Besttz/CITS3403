@@ -114,7 +114,7 @@ function timeLineOnClick(id) {
     $(".h-sec-3-p").fadeOut(150);
 
     setTimeout(function () {
-        $("#historyp"+id).fadeIn(150);
+        $("#historyp" + id).fadeIn(150);
     }, 150);
 
     var txt = "";
@@ -134,7 +134,7 @@ function timeLineOnClick(id) {
         case 4:
             txt = "HTML 5 and morden WEB";
             break;
-        
+
     }
     document.getElementById("h2-3").innerHTML = txt;
 
@@ -260,15 +260,16 @@ $(document).ready(function () {
         if (!exampleStart) {
             exampleStart = true;
             $("#HExampleArea").addClass("col-lg-6");
-            $("#HECode").css("display","");
+            $("#HECode").css("display", "");
             $("#HExampleWelcome").fadeOut(300);
             // $("#HExampleWelcome").css("display","none");
             setTimeout(function () {
-            $("#HExampleDisplay").css("background-color","white");
-            },200);
+                $("#HExampleDisplay").css("background-color", "white");
+            }, 200);
 
         } else {
-            
+            $('[data-toggle="popover"]').popover();
+
         }
         timeLineOnClick(0);
     }
