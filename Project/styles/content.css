@@ -95,7 +95,7 @@ p {
 
   .timeline-content:hover{
     transition: all 1.0s;
-    transform: scale(1.1);
+    transform: scale(1.2);
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(255,255,255,0.5);
   }
@@ -106,7 +106,7 @@ p {
 
   .timeline-content:hover::after {
     transition: all 1.0s;
-    transform: scale(1.1);
+    transform: scale(1.2);
 
     content: '';
     position: absolute;

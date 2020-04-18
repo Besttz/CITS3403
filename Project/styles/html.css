@@ -14,5 +14,38 @@
 
 
   .timeline-content:hover::after {
-    background-image:url(../media/red4.jpg);
+    background-image:url(../media/red3.jpg);
   }
+
+  #h-sec-1 {
+    background-image: url(../media/red.jpg);
+  }
+
+  #h-sec-2 {
+    background-image: url(../media/red2.jpg);
+  }
+
+  #h-sec-3 {
+    background-image: url(../media/red3.jpg);
+  }
+
+  #homeText,
+  .home-icons {
+    display: none;
+  }
+
+  .card {
+    background-color: #5ACADB;
+    padding: 1%;
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  body {
+    color: #fdfdfd;
+    min-height: 100vh;
+  }
+
+  
