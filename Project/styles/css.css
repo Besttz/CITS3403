@@ -1,0 +1,30 @@
+#h-sec-1 {
+    background-image: url(../media/yellow.jpg);
+  }
+  
+  #h-sec-2 {
+    background-image: url(../media/red2.jpg);
+  }
+  
+  #h-sec-3 {
+    background-image: url(../media/red3.jpg);
+  }
+  
+  #h-sec-4 {
+    background-image: url(../media/red5.jpg);
+  }
+  
+  #h-sec-5 {
+    background-image: url(../media/blue.jpg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+  }
+  
+  #homeText, .home-icons {
+    display: none;
+  }
+
+  .blockquote{
+      font-size: large;
+  }

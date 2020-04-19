@@ -11,56 +11,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../styles/main.css">
-  <script src="../scripts/html.js"></script>
+  <link rel="stylesheet" href="../styles/content.css">
+  <link rel="stylesheet" href="../styles/css.css">
+  <script src="../scripts/css.js"></script>
   <script src="../scripts/content.js"></script>
-  <style>
-    body {
-      color: #222;
-      background-image: url(../media/yellow.jpg);
-      margin-bottom: 60px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-    }
 
-
-    #bg-img {
-      position: fixed;
-      background-image: url(../media/red.jpg);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      z-index: -1;
-    }
-
-    #headText,
-    .home-icons,
-    #homeText,
-    #bg-img {
-      display: none;
-    }
-
-    .home-icons {
-      padding-top: 10vh;
-    }
-
-    .home-icon {
-      max-width: 350px;
-      max-height: 30vh;
-    }
-
-    
-  </style>
 </head>
 
 <body>
   <!--Nav Bar-->
-  <nav id="navbar" class="navbar navbar-expand-md navbar-light justify-content-center">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light justify-content-center">
     <a class="navbar-brand" href="../index.html" style="font-weight: 800;">
-      <img id="navicon" src="../media/favicon-dark.svg" alt="Logo" style="width:25px;">
+      <img src="../media/favicon-dark.svg" alt="Logo" style="width:25px;">
       WEB MUSEUM</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"> </span>
@@ -90,25 +52,405 @@
     </div>
   </nav>
   <!--Contents-->
-  <div id="homeBody" class="container-fluid">
-    <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
-    <div class="container-fluid home-icons">
+
+  <!--Screen 1-->
+  <div id="h-sec-1" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
+    <div class="content">
       <div class="row">
-        <div class="col">
-          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo"> </div>
+        <div class="col-sm-4 home-icons">
+          <img class="mx-auto htmlIcon d-block" src="../media/css.svg" alt="HTML logo">
         </div>
+
+        <div class="col-sm-8" id="homeText">
+          <h1 class="text-center text-uppercase">Cascading Style Sheets</h1>
+
+          <h2 class="text-center text-uppercase">The skin of WEB</h2>
+          <p id="homeP" class="text-center  text-justify">
+            When Tim Berners-Lee create HTML in 1991, there is no method to add style into HTML document. How to render
+            these elements depended on browser. However, the need for a language to express the style of documents is
+            raising. Therefore, the first version of CSS is published in December of 1996.
+            <blockquote class="blockquote">
+              <p>
+                HTML is the kind of thing that can only be loved by a computer scientist. Yes, it expresses the
+                underlying structure of a document, but documents are more than just structured text databases; they
+                have visual impact. HTML totally eliminates any visual creativity that a document’s designer might have.
+              </p>
+              <footer class="blockquote-footer text-center">Roy Smith 1993</footer>
+            </blockquote>
+
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div id="homeText">
-      <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
-      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development.
-        <br>
-        Choose any icon above you'd like to exploreto start your journey.</h3>
-    </div>
+    <a id="prev1" href="#h-sec-1"></a>
+    <a id="next1" href="#h-sec-2"></a>
   </div>
-  <div id="bg-img"></div>
-  <!--Footer-->
 
+  <!--Screen 2-->
+  <div id="h-sec-2" class="container-fluid font-shadow-black d-flex align-items-center justify-content-center">
+    <div class="content container-fluid">
+      <div class="row">
+        <!--HTML Code Card-->
+        <div class="col-lg-6 font-shadow-none">
+          <div class="htmlCode">
+            <div id="hCode0" class="card rounded mb-10 " style="background-color:rgba(239, 71, 111, 0.5)">
+              <div class="card-body">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en-US"&gt;<br>
+                <div id="hCode1" class="card rounded mb-10 " style="background-color:#077B88 ;">
+                  <div class="card-body">&lt;head&gt;
+                    <div id="hCode2" class="card" style="background-color:#C59893 ;">
+                      <div class="card-body">
+                        &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
+                      </div>
+                    </div>
+                    <div id="hCode3" class="card" style="background-color:#5E96CD ;">
+                      <div class="card-body">
+                        &lt;meta charset="utf-8"&gt;
+                      </div>
+                    </div>
+
+                    &lt;/head&gt;
+                  </div>
+                </div>
+                <br>
+                <div id="hCode4" class="card" style="background-color:#6D6875 ;">
+                  <div class=" card-body">
+                    &lt;body&gt;<br>
+
+                    <div id="hCode5" class="card" style="background-color:#5E96CD ;">
+                      <div class="card-body">
+                        &lt;h1&gt;
+                        Hi! Welcome to HTML EXAMPLE 1！
+                        &lt;/h1&gt;
+                      </div>
+                    </div>
+                    <div id="hCode6" class="card" style="background-color:#3D4C5F ;">
+                      <div class="card-body">
+                        &lt;h3&gt;
+                        This is the most basic html document.
+                        &lt;/h3&gt;
+                      </div>
+                    </div>
+                    <div id="hCode7" class="card" style="background-color:#9DC6CA ;">
+                      <div class="card-body">
+                        &lt;p&gt;<br>
+                        Here is the main paragraph of this document with an image below.<br>
+                        <div id="hCode8" class="card" style="background-color:#F15E6E ;">
+                          <div class="card-body">
+                            &lt;img src=" ../../media/html.png" alt="image" &gt;<br></div>
+                        </div>
+                        &lt;/p&gt;
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+                &lt;/html&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" id="homeText2">
+          <h1 id="headText2" class="text-center text-uppercase">Now let's look at some code</h1>
+          <!--HTML Code Explain-->
+          <p id="homeP2" class="h-sec-2-p text-center text-justify">
+            Although HTML is not a programming language, the program running behind is usually written in Javascript
+            which we will see later. HTML simply tells the browser what does it have in the documents. It uses tags to
+            make the document a tree structure, you can see the whole structure of a basic but working webpage.<br>
+            <strong> Click any block of nodes to see how it works!</strong>
+            <br>
+            <a href="examples/1.html">Check how this example works in your browser.</a>
+          </p>
+          <p id="htmlP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            This is the root node of the HTML tree structure. Every element contained by this HTML document is inside
+            this element.<br>
+            The &lt;!DOCTYPE html&gt; tag specifies the particular SGML Document-Type Definition, telling the browser
+            this is an HTML document. lang="en-US" property tells the browser the language of this document.
+          </p>
+          <p id="headP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            One of the two directly children of the HTML element. The content in the HEAD element will now display to
+            users. It only provides information about the document, it should always contain two elements, a title and a
+            meta.
+
+          </p>
+          <p id="titleP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            It specifies the title of this document. It is usually displayed at the top of the browser window, or at the
+            tab bar.
+
+          </p>
+          <p id="linkP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            It specifies the character set used for this document. The most popular one used for the Web is the UTF-8.
+            <br>
+            Setting the wrong character set may make the content recognizable.
+          </p>
+          <p id="bodyP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            The body element provides the contents of this document, everything you can see inside the browser is inside
+            this tag.
+          </p>
+          <p id="headingP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            There are usually headings before the sections of paragraphed text. There are six levels of headings in
+            HTML, by using these tags, the browser will use larger font size and boldface font, &lt;h1&gt; is the
+            highest-level heading.
+
+          </p>
+          <p id="pP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            P stands for the paragraph. The browser usually puts words to fit the lines in the window for displaying
+            text like other word processor programs.
+
+          </p>
+          <p id="imgP" class="h-sec-2-p text-center  text-justify" style="display: none;">
+            As the name of this tag, it is used for inserting images into the display of a document. The source file
+            for this image is specified in an element. The browser will download the image file from "
+            ../../media/html.png" and display in the window.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a id="prev2" href="#h-sec-1"></a>
+    <a id="next2" href="#h-sec-3"></a>
+  </div>
+
+  <!--Screen 3-->
+  <div id="h-sec-3" class="container-fluid font-shadow-black d-flex align-items-center justify-content-center">
+    <div class="content container-fluid">
+      <h1 class="headText3 text-center text-uppercase">The history of HTML</h1>
+
+      <div class="row">
+        <!--Timeline-->
+        <div class="col-md-6">
+          <div class="timeline">
+            <div id="history0" class="timelinebox left">
+              <div class="timeline-content">
+                <h2>Before W3C</h2>
+                <p>Tim Berners-Lee created HTML </p>
+              </div>
+            </div>
+            <div id="history1" class="timelinebox right">
+              <div class="timeline-content">
+                <h2>1993</h2>
+                <p>Mosaic 1.0 and W3C</p>
+              </div>
+            </div>
+            <div id="history2" class="timelinebox left">
+              <div class="timeline-content">
+                <h2>1997</h2>
+                <p>HTML 4.0 and XML</p>
+              </div>
+            </div>
+            <div id="history3" class="timelinebox right">
+              <div class="timeline-content">
+                <h2>2000</h2>
+                <p>XHTML</p>
+              </div>
+            </div>
+            <div id="history4" class="timelinebox left">
+              <div class="timeline-content">
+                <h2>2010+</h2>
+                <p>HTML 5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--History Showing Area-->
+        <div class="col-md-6">
+          <h2 id="h2-3" class="text-center text-uppercase">Click the timeline</h2>
+          <p class="h-sec-3-p text-center  text-justify">
+            Click the time period from the timeline to see what important things happened in the history of HTML.
+          </p>
+          <p id="historyp0" class="h-sec-3-p text-center  text-justify" style="display: none;">
+            In late 1980, as the development of computer networks, a researcher named Tim Berners-Lee proposed an
+            Internet-based hypertext system for sharing documents. Then on the Christmas day of 1990, he created the
+            first browser called WorldWideWeb. He also launched the world's first website in 1991. Later on, he
+            published a document named HTML Tags which contained the first 18 HTML tags with description.<br>
+            <img class="img-fluid" src="media/1991.png" alt="HTML document">
+          </p>
+          <p id="historyp1" class="h-sec-3-p text-center  text-justify" style="display: none;">
+            Students from the University of Illinois programmed NCSA Mosaic, one of the first web browsers with a
+            graphical interface which gained worldwide popularity among the general public shortly. <br>
+            In 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C). The main objective is the development
+            of Web standards for the World Wide Web (WWW).It developed standards for HTML, XHML, XML, or CSS markup
+            languages. <br>
+            The Mosaic Communications Corporation (renamed Netscape) launched with the Netscape Navigator browser in
+            1994, it became widely popular in a short period. Then Microsoft released IE 1.0 in 1995. HTML 2.0 standard
+            also published this year.
+            <img class="img-fluid" src="media/1993.png" style="max-height: 10rem;" alt="browser1">
+            <img class="img-fluid" src="media/1993-2.png" style="max-height: 10rem;" alt="browser2">
+
+          </p>
+          <p id="historyp2" class="h-sec-3-p text-center  text-justify" style="display: none;">
+            In this year, W3C published official recommendations for both the HTML 3.2 and 4.0 specification. Also, The
+            term Dynamic HTML (DHTML) was first introduced with IE 4.0, it is the combination of the HTML, CSS, and
+            JavaScript technology, most of the modern websites are using these three components. <br>
+            W3C also published the final recommendation for the XML(Extensible Markup Language) 1.0 specification in
+            1998..
+          </p>
+          <p id="historyp3" class="h-sec-3-p text-center  text-justify" style="display: none;">
+            W3C issued official recommendations for the XHTML(Extensible HyperText Markup Language) 1.0 specification,
+            integration of XML and HTML. According to W3C’s original plans, XHTML was supposed to be the successor to
+            HTML.<br> However it wasn't accepted by browser vendors, Web development companies. A new organization was
+            formed in 2004, the Web Hypertext Application Technology (WHAT) Working Group, then they started working on
+            the next generation of HTML, which based on HTML 4.01, rather than XHTML 1.1.<br>
+            In 2006, W3C announced they would begin working with the WHAT Working Group. Both CSS and Javascript get
+            fast development during this decade.
+
+          </p>
+          <p id="historyp4" class="h-sec-3-p text-center  text-justify" style="display: none;">
+            In 2010, the concept "Responsive Web Design" was introduced, it describes a new way of styling HTML
+            documents. It allows website content display concerning resolution or display size, the same content will be
+            able to display on mobile device or desktop in different layout or font size.<br>
+            After few years development, W3C adopted the final recommendation for the HTML5 markup language, This
+            website also implement lot of the HTML 5 new freatures combine with CSS3 and javascript.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a id="prev3" href="#h-sec-2"></a>
+    <a id="next3" href="#h-sec-4"></a>
+  </div>
+
+  <!--Screen 4-->
+  <div id="h-sec-4" class="container-fluid d-flex align-items-center font-shadow-black justify-content-center">
+    <div class="content container-fluid">
+      <h1 id="headText4" class="text-center text-uppercase">Build Your own webpage</h1>
+      <!--Buttons-->
+      <div id="HButton" class="ExampleButton text-center">
+        <button id="B0" type="button" class="btn btn-outline-warning text-white" data-toggle="popover" title=""
+          data-content="Only one HTML node needed in one document">HTML</button>
+        <button id="B1" type="button" class="btn btn-outline-warning text-white" data-toggle="popover" title=""
+          data-content="Only one HEAD node needed in one document">HEAD</button>
+        <button id="B2" type="button" class="btn btn-outline-warning text-white">TITLE</button>
+        <button id="B3" type="button" class="btn btn-outline-warning text-white" data-toggle="popover" title=""
+          data-content="Only one BODY node needed in one document">BODY</button>
+        <button id="B4" type="button" class="btn btn-outline-warning text-white">HEADING</button>
+        <button id="B5" type="button" class="btn btn-outline-warning text-white">P</button>
+        <button id="B6" type="button" class="btn btn-outline-warning text-white">LINK</button>
+        <button id="B7" type="button" class="btn btn-outline-warning text-white">IMAGE</button>
+        <button id="B8" type="button" class="btn btn-outline-warning text-white">TABLE</button>
+        <!--Interact Asking Window-->
+        <div class="modal fade " id="myModal">
+          <div class="modal-dialog font-shadow-none">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 id="htmlExampleModalHead" class="modal-title">Title</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div id="htmlExampleModalBody"></div>
+                <div class="form-group">
+                  <input type="text" class="form-control d-none" id="htmlExampleModalInput1" placeholder="">
+                  <input type="text" class="form-control d-none" id="htmlExampleModalInput2" placeholder="">
+                </div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button id="htmlExampleModalOK" type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Example Code Area-->
+        <div id="HECode" class="col-lg-6 font-shadow-none" style="display: none;">
+          <div class="htmlCode">
+            <div id="hECode0" class="card rounded mb-10 " style="background-color:rgba(239, 71, 111, 0.5)">
+              <div class="card-body">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en-US"&gt;<br>
+                <div id="hECode1" class="card rounded mb-10 " style="display: none;background-color:#077B88 ;">
+                  <div class="card-body">&lt;head&gt;
+                    <div id="hECode2" class="card" style="display: none;background-color:#C59893 ;">
+                      <div id="hCode2content" class="card-body">
+                        &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
+                      </div>
+                    </div>
+                    <div id="hECode3" class="card  " style="display: none;background-color:#5E96CD ;">
+                      <div class=" card-body">
+                        &lt;meta charset="utf-8"&gt;
+                      </div>
+                    </div>
+
+                    &lt;/head&gt;
+                  </div>
+                </div>
+                <br>
+                <div id="hECode4" class="card " style="display: none;background-color:#6D6875 ;">
+                  <div class=" card-body">
+                    &lt;body&gt;
+                    <div id="hEndOfBody"></div>
+                    &lt;/body&gt;
+                  </div>
+                </div>
+                <br>
+                &lt;/html&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Example Browser Area-->
+        <div id="HExampleArea">
+          <div id="HETitle" class="font-shadow-none text-uppercase">
+            WEB MESUME BROWSER
+          </div>
+          <div id="HExampleDisplay">
+            <!--Example Browser Welcome Panel-->
+            <div id="HExampleWelcome">
+              <p id="HExampleWelcomeHead">WELCOME TO WEB MESUME BROWSER!</p>
+              <p>It's your turn to explore HTML, simply choose the buttons above to creat your webpage! Click the first
+                button to start build an HTML document!<br> Refresh this page if you want to rebuild.
+              </p>
+
+              <p id="HExampleWelcomeHint" style="display: none;">HINT! You should always build the HTML document with
+                the root node first.</p>
+            </div>
+            <div id="hEndOfBrowser"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <a id="prev4" href="#h-sec-3"></a>
+    <a id="next4" href="#h-sec-5"></a>
+  </div>
+
+  <!--Screen 5-->
+  <div id="h-sec-5" class="container-fluid d-flex align-items-center font-shadow-none justify-content-center">
+    <div class="content container-fluid">
+      <div class="row">
+        <!--Summary Text-->
+        <div class="col-md-6" id="homeText3">
+          <h2 class="headText3 text-center text-uppercase">the end of the css journey</h2>
+          <p class="text-center  text-justify">
+            Now you know what is CSS. By learning CSS,
+            you can stylize your webpage as you want. However, the key of building a dynamic and interactive webpage is
+            JavaScript. The real programming language running behind the webpage.<br>
+            Click the JavaScript icon to start the last journey!
+          </p>
+
+        </div>
+        <!--CSS Icon-->
+        <div class="col-md-6">
+          <a href="../js/index.html">
+            <img class="mx-auto d-block htmlIcon home-icon" src="../media/js.svg" alt="HTML logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <a id="prev5" href="#h-sec-4"></a>
+    <a id="next5" href="#h-sec-5"></a>
+  </div>
+
+  <!--Footer-->
   <footer class="footer">
     <div class="container text-center">
       Copyright © 2012-2020 <a href="http://tommy.nz" style="color: #f0f0f0;">Besttz</a>. All rights reserved.
@@ -116,6 +458,5 @@
   </footer>
 
 </body>
-
 
 </html>
