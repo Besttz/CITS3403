@@ -46,7 +46,16 @@ function CSSDemo(cssID) {
             $("#HExampleDisplay").css("background-color", "#222");
 
             break;
+        case 1:
+            $("#HExampleDisplay").css("background-color", "white");
 
+            break;
+
+        case 2:
+            $("#HExampleDisplay").css("background-color", "black");
+
+            break;
+        case 1:
         case 3:
             $("#HExampleDisplay").css("background-color", "white");
             break;
