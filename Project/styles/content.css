@@ -184,3 +184,8 @@ p {
   .modal,h4 {
       display: none;
   } */
+
+  .broswerP{
+      color: black;
+      text-shadow: 0px 0px 0px #000000;
+  }

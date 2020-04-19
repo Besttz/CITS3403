@@ -158,21 +158,32 @@ function modalMaker(buttonID) {
             }
 
             break;
-        case 3:
-            document.getElementById("htmlExampleModalHead").innerHTML = "Body";
 
-
+        case 5:
+            document.getElementById("htmlExampleModalHead").innerHTML = "Paragraph";
+            if (!bodyADD) {
+                exampleClicked = 0;
+                document.getElementById("htmlExampleModalBody").innerHTML = "Paragraph element must be added inside BODY element.<br> Please check again.";
+            } else {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your content.";
+                exampleClicked = 5;
+                $("#htmlExampleModalInput1").removeClass("d-none");
+            }
             break;
         case 4:
             document.getElementById("htmlExampleModalHead").innerHTML = "Heading";
-
-            break;
-        case 5:
-            document.getElementById("htmlExampleModalHead").innerHTML = "Paragraph";
+            if (!bodyADD) {
+                exampleClicked = 0;
+                document.getElementById("htmlExampleModalBody").innerHTML = "Heading element must be added inside BODY element.<br> Please check again.";
+            } else {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your Heading.";
+                exampleClicked = 4;
+                $("#htmlExampleModalInput1").removeClass("d-none");
+            }
 
             break;
         case 6:
-            document.getElementById("htmlExampleModalHead").innerHTML = "Table";
+            document.getElementById("htmlExampleModalHead").innerHTML = "Link";
 
             break;
         case 7:
@@ -405,21 +416,31 @@ $(document).ready(function () {
     );
 
     $("#htmlExampleModalOK").click(function () {
+        $("#htmlExampleModalInput1").addClass("d-none");
+
         switch (exampleClicked) {
             case 2:
-                $("#htmlExampleModalInput1").addClass("d-none");
-
                 document.getElementById("hCode2content").innerHTML = "&lt;title&gt;" +
                     document.getElementById("htmlExampleModalInput1").value + "&lt;/title&gt;";
                 $("#hECode2").fadeIn(500);
                 document.getElementById("HETitle").innerHTML = document.getElementById("htmlExampleModalInput1").value;
-                document.getElementById("htmlExampleModalInput1").value = "";
-
                 break;
 
+
+            case 5:
+                $("#hEndOfBody").before('<div class="card" style="background-color:#9DC6CA ;">' +
+                    '<div class=" card-body">' +
+                    '&lt;p&gt;' + document.getElementById("htmlExampleModalInput1").value + '&lt;/p&gt;'
+                    + '</div>')
+
+
+                $("#hEndOfBrowser").before('<div class="broswerP">' +
+                    document.getElementById("htmlExampleModalInput1").value + '</div>');
             default:
                 break;
         }
+        document.getElementById("htmlExampleModalInput1").value = "";
+
     }
     );
 });
