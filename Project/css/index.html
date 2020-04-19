@@ -202,51 +202,122 @@
         <div class="col-lg-6">
           <h2 class="text-center text-uppercase">CSS SELECTORS</h1>
             <!--CSS Code Explain-->
-            <p class="h-sec-2-p text-center text-justify">
-              CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
-              attrbute. Here are some basic selectors.
-            </p>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle text-uppercase">P</div>
-              <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
-            </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">#abc</div>
-              <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a document,
-                so the id selector will select one unique element which id="abc".</p>
-            </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">.Class</div>
-              <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
+            <div id="CSSSelector0">
+              <p class="h-sec-2-p text-center text-justify">
+                CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
+                attrbute. Here are some basic selectors.
               </p>
-            </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">P.abc</div>
-              <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
-                class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
-            </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle text-uppercase">P</div>
+                <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">#abc</div>
+                <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a
+                  document,
+                  so the id selector will select one unique element which id="abc".</p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">.Class</div>
+                <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
+                </p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">P.abc</div>
+                <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
+                  class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
+              </div>
 
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">*</div>
-              <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">*</div>
+                <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+              </div>
+
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">p,h1,#a</div>
+                <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
+                  &lt;h1&gt;, and element with id="a"</p>
+              </div>
             </div>
+            <div id="CSSSelector1" style="display: none;">
+              <p class="h-sec-2-p text-center text-justify">
+                The CSS selectors can contain more than one selector with a combinator, different combinators mean
+                different relationship between the elements.
+              </p>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle text-uppercase">space</div>
+                <p class="CSSSelectorDes">The descendant selector matches all elements that are descendants of a
+                  specified element.
+                  'p img' selects all &lt;img&gt; elements inside lt;p&gt elements: </p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle text-uppercase">&gt;</div>
+                <p class="CSSSelectorDes">The child selector(&gt;) selects all elements that are the children of a
+                  specified element. 'p&gt;img' selects all &lt;img&gt; elements are children of a &lt;p&gt element.
+                </p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">+</div>
+                <p class="CSSSelectorDes">The adjacent sibling selector selects all elements that are the adjacent
+                  siblings of a specified element.
+                  'p+img' selects all &lt;img&gt; elements immediately after a &lt;p&gt element.
+                </p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">~</div>
+                <p class="CSSSelectorDes">
+                  The general sibling selector selects all elements that are siblings of a element.
+                  'p~img' selects all &lt;img&gt; elements are siblings of &lt;p&gt element.
+                </p>
+              </div>
 
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">p,h1,#a</div>
-              <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
-                &lt;h1&gt;, and element with id="a"</p>
+
             </div>
+            <div id="CSSSelector2" style="display: none;">
+              <p class="h-sec-2-p text-center text-justify">
+                CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
+                attrbute. Here are some basic selectors.
+              </p>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle text-uppercase">P</div>
+                <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">#abc</div>
+                <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a
+                  document,
+                  so the id selector will select one unique element which id="abc".</p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">.Class</div>
+                <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
+                </p>
+              </div>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">P.abc</div>
+                <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
+                  class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
+              </div>
 
-            <p id="externalCSS2" class="text-center  text-justify" style="display: none;">
-              When writing your webpage, you can combine all of these kinds of CSS as you want. However, if some
-              properties have been defined mulitple times, the value last read will be used. Therefore the priority is
-              in
-              this order 1. Inline style (inside an HTML element) 2. External and internal style sheets (in the head
-              section) 3.Browser default<br>
-              By sprating HTML and CSS in different file, you can easily keep all your webpages in unified and easily
-              modifiable style with a better legibility, and this is an essential of complicated web application.
-            </p>
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">*</div>
+                <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+              </div>
 
+              <div class="text-center d-flex text-justify">
+                <div class="CSSSelectorTitle">p,h1,#a</div>
+                <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
+                  &lt;h1&gt;, and element with id="a"</p>
+              </div>
+            </div>
+            <ul class="CSSSelectorPage pagination justify-content-center">
+              <li class="page-item"><a id="CSSSelectorPage1" class="page-link" href="javascript:void(0);"
+                  onclick="CSSSelector(0)">Basic</a></li>
+              <li class="page-item"><a id="CSSSelectorPage2" class="page-link" href="javascript:void(0);"
+                  onclick="CSSSelector(1)">Combanation</a></li>
+              <li class="page-item"><a id="CSSSelectorPage3" class="page-link" href="javascript:void(0);"
+                  onclick="CSSSelector(2)">Pseudo-classes</a></li>
+            </ul>
         </div>
 
         <!--Selectors Checking Area-->

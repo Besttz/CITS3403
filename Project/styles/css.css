@@ -71,3 +71,9 @@
     padding-right: auto;
     margin-bottom: 0.5rem;
 }
+
+.page-link{
+    background-color: rgba(243, 146, 146, 0.1);
+    color: black;
+    font-weight: 300;
+}

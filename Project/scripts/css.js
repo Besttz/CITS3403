@@ -1,5 +1,24 @@
 max = 5; //FOR KEYBOARD PAGE CONTROL
 csstxt = "body {<br>   color:white<br> }<br> h1 {<br>   font-size: medium<br>    } <br> p {<br>   olor:black<br>   ;margin: 1rem<br> }<br>";
+function CSSSelector(pageID) {
+    switch (pageID) {
+        case 0:
+            $("#CSSSelector1").fadeOut(200);
+            $("#CSSSelector2").fadeOut(200);
+            break;
+        case 1:
+            $("#CSSSelector0").fadeOut(200);
+            $("#CSSSelector2").fadeOut(200);
+            break;
+        case 2:
+            $("#CSSSelector0").fadeOut(200);
+            $("#CSSSelector1").fadeOut(200);
+            break;
+        default:
+            break;
+    }
+    setTimeout(function () { $("#CSSSelector" + pageID).fadeIn(200);},200);
+}
 $(document).ready(function () {
     $("#inlineCSS").click(function () {
         $("#inlineCSS1").css("display", "inline");
