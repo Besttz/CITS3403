@@ -219,7 +219,7 @@ p {
   font-size: x-large;
 }
 
-HExampleWelcome, p {
-  font-weight: normal;
+#HExampleWelcome p {
+  /* font-weight: normal; */
   color: white;
 }

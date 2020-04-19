@@ -1,3 +1,6 @@
+/* p{
+    color: black;
+} */
 #h-sec-1 {
     background-image: url(../media/yellow.jpg);
 }
@@ -93,7 +96,7 @@
     color: black;
 }
 
-#h-sec-3 .card,#h-sec-4 .card {
+#h-sec-3 .card{
     background-color:  rgba(243, 146, 146, 0.3);
 }
 
@@ -101,16 +104,15 @@
     font-weight: 400;
 }
 
-/* #h-sec-4 .page-link{
-    background-color: rgba(235, 192, 192, 0.5);
-} */
-
+#h-sec-4 .card-body{
+    font-size: xx-small;
+}
 
 .page-link:hover {
     background-color: #f3eaea;
 }
 
-#HExampleArea {
+#HExampleArea, #h-sec-4 .card  {
     background-color: rgba(243, 146, 146, 0.3);
 
 }
