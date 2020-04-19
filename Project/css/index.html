@@ -96,9 +96,8 @@
           <h1 class="text-center text-uppercase">Now let's look at CSS code</h1>
           <!--CSS Code Explain-->
           <p class="h-sec-2-p text-center text-justify">
-            There are three different ways to combine CSS with the HTML documents. <br>Click the area below to see how
-            it
-            looks.
+            There are three different ways to combine CSS with the HTML documents. <br>
+            <strong>Click the area below to see how it looks.</strong>
           </p>
           <div id="inlineCSS" class="text-center d-flex text-justify timeline-content">
             <div class="CSSCodeTitle text-uppercase">Inline</div>
@@ -202,6 +201,7 @@
         <div class="col-lg-6">
           <h2 class="text-center text-uppercase">CSS SELECTORS</h1>
             <!--CSS Code Explain-->
+            <!--Basic Explain-->
             <div id="CSSSelector0">
               <p class="h-sec-2-p text-center text-justify">
                 CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
@@ -239,6 +239,7 @@
                   &lt;h1&gt;, and element with id="a"</p>
               </div>
             </div>
+            <!--Combanator Explain-->
             <div id="CSSSelector1" style="display: none;">
               <p class="h-sec-2-p text-center text-justify">
                 The CSS selectors can contain more than one selector with a combinator, different combinators mean
@@ -273,43 +274,29 @@
 
 
             </div>
+            <!--Pseudo Class Explain-->
             <div id="CSSSelector2" style="display: none;">
               <p class="h-sec-2-p text-center text-justify">
-                CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
-                attrbute. Here are some basic selectors.
+                A pseudo-class is used to define a special state of an element,
+                including a mouses over it, an element gets focus or a link is visited.
+                You can make some animation by pseudo-class, like getting bigger when user's mouse is on one element.
+                Below are some examples.<br>
+                <strong>Syntax:</strong> selector:pseudo-class { property:value; }
               </p>
               <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle text-uppercase">P</div>
-                <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
+                <div class="CSSSelectorTitle">hover</div>
+                <p class="CSSSelectorDes">Special style on mouse over.</p>
               </div>
               <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle">#abc</div>
-                <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a
-                  document,
-                  so the id selector will select one unique element which id="abc".</p>
+                <div class="CSSSelectorTitle">link</div>
+                <p class="CSSSelectorDes">Special style on unvisited links.</p>
               </div>
               <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle">.Class</div>
-                <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
-                </p>
-              </div>
-              <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle">P.abc</div>
-                <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
-                  class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
-              </div>
-
-              <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle">*</div>
-                <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
-              </div>
-
-              <div class="text-center d-flex text-justify">
-                <div class="CSSSelectorTitle">p,h1,#a</div>
-                <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
-                  &lt;h1&gt;, and element with id="a"</p>
+                <div class="CSSSelectorTitle">focus</div>
+                <p class="CSSSelectorDes">Special style on the input element that has focus</p>
               </div>
             </div>
+            <!--Page Buttons Explain-->
             <ul class="CSSSelectorPage pagination justify-content-center">
               <li class="page-item"><a id="CSSSelectorPage1" class="page-link" href="javascript:void(0);"
                   onclick="CSSSelector(0)">Basic</a></li>
