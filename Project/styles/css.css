@@ -73,7 +73,24 @@
 }
 
 .page-link{
-    background-color: rgba(243, 146, 146, 0.1);
+    background-color: rgba(243, 146, 146, 0.5);
     color: black;
     font-weight: 300;
+    border: 0;
+}
+.breadcrumb {
+    background-color: rgba(243, 146, 146, 0.3);
+    
+}
+
+.breadcrumb a{
+    color: black;
+}
+
+#h-sec-3 .card {
+    background-color:  rgba(243, 146, 146, 0.3);
+}
+
+#h-sec-3 p {
+    font-weight: 400;
 }

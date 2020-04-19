@@ -17,8 +17,48 @@ function CSSSelector(pageID) {
         default:
             break;
     }
-    setTimeout(function () { $("#CSSSelector" + pageID).fadeIn(200);},200);
+    setTimeout(function () { $("#CSSSelector" + pageID).fadeIn(200); }, 200);
 }
+
+function csOnclick(csid) {
+    for (let index = 30; index < 36; index++) {
+        $("#c" + index).css("background-color", "rgba(243, 146, 146, 0.3)");
+    }
+    switch (csid) {
+        case 0:
+            for (let index = 30; index < 36; index++) {
+                $("#c" + index).css("background-color", "rgba(243, 200, 200, 0.8)");
+            }
+            break;
+        case 1:
+            $("#c31").css("background-color", "rgba(243, 200, 200, 0.8)");
+            $("#c33").css("background-color", "rgba(243, 200, 200, 0.8)");
+            $("#c35").css("background-color", "rgba(243, 200, 200, 0.8)");
+            
+            break;
+        case 2:
+            $("#c34").css("background-color", "rgba(243, 200, 200, 0.8)");
+
+            break;
+        case 3:
+            $("#c34").css("background-color", "rgba(243, 200, 200, 0.8)");
+            $("#c35").css("background-color", "rgba(243, 200, 200, 0.8)");
+
+            break;
+        case 4:
+            $("#c35").css("background-color", "rgba(243, 200, 200, 0.8)");
+
+            break;
+        case 5:
+            $("#c35").css("background-color", "rgba(243, 200, 200, 0.8)");
+
+            break;
+
+        default:
+            break;
+    }
+}
+
 $(document).ready(function () {
     $("#inlineCSS").click(function () {
         $("#inlineCSS1").css("display", "inline");
@@ -47,6 +87,32 @@ $(document).ready(function () {
         $("#CSSBlock2").html('&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;');
         $("#CSSBlock4").html(csstxt);
         $("#externalCSS2").fadeIn(500);
+    }
+    );
+
+    $("#cs0").click(function () {
+        csOnclick(0);
+    }
+    );
+
+    $("#cs1").click(function () {
+        csOnclick(1);
+    }
+    );
+    $("#cs2").click(function () {
+        csOnclick(2);
+    }
+    );
+    $("#cs3").click(function () {
+        csOnclick(3);
+    }
+    );
+    $("#cs4").click(function () {
+        csOnclick(4);
+    }
+    );
+    $("#cs5").click(function () {
+        csOnclick(5);
     }
     );
 });
