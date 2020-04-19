@@ -178,6 +178,7 @@ function modalMaker(buttonID) {
                 document.getElementById("htmlExampleModalBody").innerHTML = "Heading element must be added inside BODY element.<br> Please check again.";
             } else {
                 document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your Heading.";
+                $("#htmlExampleModalInput1").attr("placeholder", "Enter here!");
                 exampleClicked = 4;
                 $("#htmlExampleModalInput1").removeClass("d-none");
             }

@@ -90,10 +90,12 @@ h-sec-3, .img-fluid {
 
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: 97%;
+    /* padding-bottom: 1.5rem; */
 }
 #HETitle{
     font-weight: bold;
+    display: block;
 }
 #HExampleWelcome{
     padding: 5rem 2rem;

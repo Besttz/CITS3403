@@ -65,3 +65,7 @@ p {
 .font-shadow-white {
   text-shadow: 2px 2px 4px #FFFFFF;
 }
+
+.content{
+  /* padding-bottom: 10vh; */
+}
