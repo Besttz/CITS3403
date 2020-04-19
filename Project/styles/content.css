@@ -57,12 +57,12 @@ p {
     
 }
 
-#htmlIcon:hover {
+.htmlIcon:hover {
     transition: all 0.5s;
     transform: scale(1.2);
   }
 
-  #htmlIcon {
+  .htmlIcon {
     transform: scale(1);
     transition: all 0.5s;
   }

@@ -1,0 +1,55 @@
+body {
+    color: #fdfdfd;
+    background-image: url(../media/grey.jpg);
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2 {
+    padding-top: 10vh;
+}
+
+img:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+img {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+#bg-img {
+    position: fixed;
+    background-image: url(../media/red.jpg);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    display: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#headText, .home-icons, #homeText, #bg-img {
+    display: none;
+}
+
+.home-icons {
+    padding-top: 10vh;
+}
+
+.home-icon {
+    max-width: 350px;
+    max-height: 35vh;
+}

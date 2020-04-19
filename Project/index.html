@@ -11,72 +11,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/home.css">
   <script src="scripts/home.js"></script>
-  <style>
-    body {
-      color: #fdfdfd;
-      background-image: url(media/grey.jpg);
-      margin-bottom: 60px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-
-    h1,
-    h2 {
-      padding-top: 10vh;
-
-    }
-
-    img:hover {
-      transition: all 0.5s;
-      transform: scale(1.2);
-    }
-
-    img {
-      transform: scale(1);
-      transition: all 0.5s;
-    }
-
-    #bg-img {
-      position: fixed;
-      background-image: url(media/red.jpg);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      z-index: -1;
-      display: none;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-    }
-
-    #headText,
-    .home-icons,
-    #homeText,
-    #bg-img {
-      display: none;
-    }
-
-    .home-icons {
-      padding-top: 10vh;
-    }
-
-    .home-icon {
-      max-width: 350px;
-      max-height: 35vh;
-    }
-
-    .nav-item {
-      margin-left: 50px;
-    }
-  </style>
 </head>
 
 <body>
@@ -112,9 +48,11 @@
       </ul>
     </div>
   </nav>
-  <!--Contents-->
-  <div id="homeBody" class="container-fluid">
+
+  <!--Content-->
+  <div class="container-fluid">
     <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
+    <!--Icons-->
     <div class="container-fluid home-icons">
       <div class="row">
         <div class="col">
@@ -126,16 +64,17 @@
       </div>
     </div>
 
+    <!--Text-->
     <div id="homeText">
       <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
-      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development.
+      <p id="homeP" class="text-center"> Web Museum contains the main components of modern WEB development.
         <br>
-        Choose any icon above you'd like to exploreto start your journey.</h3>
+        Choose any icon above you'd like to exploreto start your journey.</p>
     </div>
   </div>
   <div id="bg-img"></div>
-  <!--Footer-->
 
+  <!--Footer-->
   <footer class="footer">
     <div class="container text-center">
       Copyright © 2012-2020 <a href="http://tommy.nz" style="color: #f0f0f0;">Besttz</a>. All rights reserved.
@@ -143,6 +82,5 @@
   </footer>
 
 </body>
-
 
 </html>
