@@ -1,5 +1,5 @@
 clicked = false;
-max = 5;
+max = 5; //FOR KEYBOARD PAGE CONTROL
 exampleStart = false;
 headADD = false;
 bodyADD = false;
@@ -37,7 +37,6 @@ function changeHead(id) {
             break;
 
         default:
-
             txt = "Continue click other blocks!"
             break;
     }
@@ -48,7 +47,6 @@ function changeHead(id) {
 
 
 function cardOnHover(id) {
-
     $("#headText2").stop(true, false);
     $("#headText2").fadeOut(150);
     setTimeout(function () {
@@ -106,7 +104,6 @@ function cardOnClick(id) {
                 $("#pP").css("display", "none");
                 $("#imgP").fadeIn(150);
                 break;
-
         }
     }, 150 + id * 2);
 
@@ -156,7 +153,6 @@ function modalMaker(buttonID) {
                 exampleClicked = 2;
                 $("#htmlExampleModalInput1").removeClass("d-none");
             }
-
             break;
 
         case 5:
@@ -436,6 +432,25 @@ $(document).ready(function () {
         }
     }
     );
+    $("#B8").click(function () {
+        if (!exampleStart) {
+            $("#HExampleWelcomeHint").fadeIn(500);
+            $("#HExampleWelcomeHint").fadeOut(500);
+            $("#HExampleWelcomeHint").fadeIn(500);
+
+        } else if (bodyADD) {
+            $("#hEndOfBody").before('<div class="card" style="background-color:#083D77 ;">' +
+                '<div class=" card-body">' +
+                '&lt;table style="width:100%"&gt;' + "&lt;tr&gt;<br>     &lt;th&gt;Firstname&lt;/th&gt;<br>     &lt;th&gt;Lastname&lt;/th&gt;<br>      &lt;th&gt;Age&lt;/th&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>     &lt;td&gt;Tommy&lt;/td&gt;<br>     &lt;td&gt;Zhang&lt;/td&gt;<br>     &lt;td&gt;21&lt;/td&gt;<br>   &lt;/tr&gt;<br>   &lt;tr&gt;<br>     &lt;td&gt;Zhenyu&lt;/td&gt;<br>     &lt;td&gt;Yang&lt;/td&gt;<br>     &lt;td&gt;24&lt;/td&gt;<br>   &lt;/tr&gt;<br>" + '&lt;/table&gt;'
+                + '</div>');
+
+            $("#hEndOfBrowser").before('<table class="broswerP" style="width:100%">' +
+                "<tr>     <th>Firstname</th>     <th>Lastname</th>      <th>Age</th>   </tr>   <tr>     <td>Tommy</td>     <td>Zhang</td>     <td>21</td>   </tr>   <tr>     <td>Zhenyu</td>     <td>Yang</td>     <td>24</td>   </tr>" + '</table>');
+            document.getElementById("htmlExampleModalInput1").value = "";
+            $("#htmlExampleModalInput1").addClass("d-none");
+        }
+    }
+    );
 
     $("#htmlExampleModalOK").click(function () {
         $("#htmlExampleModalInput1").addClass("d-none");
@@ -457,7 +472,6 @@ $(document).ready(function () {
                     '&lt;h1&gt;' + document.getElementById("htmlExampleModalInput1").value + '&lt;/h1&gt;'
                     + '</div>');
 
-
                 $("#hEndOfBrowser").before('<div class="broswerH">' +
                     document.getElementById("htmlExampleModalInput1").value + '</div>');
                 document.getElementById("htmlExampleModalInput1").value = "";
@@ -469,7 +483,6 @@ $(document).ready(function () {
                     '<div class=" card-body">' +
                     '&lt;p&gt;' + document.getElementById("htmlExampleModalInput1").value + '&lt;/p&gt;'
                     + '</div>');
-
 
                 $("#hEndOfBrowser").before('<div class="broswerP">' +
                     document.getElementById("htmlExampleModalInput1").value + '</div>');
