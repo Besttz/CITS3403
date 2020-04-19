@@ -37,8 +37,11 @@
     background-image: url(../media/red5.jpg);
   }
 
-  #h-sec-END{
-    background-image: url(../media/grey.jpg);
+  #h-sec-5{
+    background-image: url(../media/yellow.jpg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: black;
   }
 
   #homeText,

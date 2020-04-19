@@ -1,5 +1,5 @@
 clicked = false;
-max = 4;
+max = 5;
 exampleStart = false;
 headADD = false;
 bodyADD = false;
@@ -495,7 +495,7 @@ $(document).ready(function () {
                 break;
 
             case 7:
-                if (document.getElementById("htmlExampleModalInput1").value =="") {
+                if (document.getElementById("htmlExampleModalInput1").value == "") {
                     document.getElementById("htmlExampleModalInput1").value = "../media/img1.png";
                 }
                 $("#hEndOfBody").before('<div class="card" style="background-color:#DA4167 ;">' +

@@ -4,9 +4,6 @@ p {
     font-weight: 200;
 }
 
-#homeText,#homeText2 {
-    /* max-width: 1500px; */
-}
 
 .content {
     /* padding-top: 10vh; */
@@ -28,7 +25,7 @@ p {
   min-height: 100vh;
 }
 
-#h-sec-END{
+#h-sec-5{
     background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
