@@ -13,7 +13,7 @@
 }
 
 #h-sec-4 {
-    background-image: url(../media/red5.jpg);
+    background-image: url(../media/p4.jpg);
 }
 
 #h-sec-5 {
@@ -55,7 +55,12 @@
 #h-sec-3 h1{
     margin-bottom: 3rem;
 }
-
+#h-sec-4 h1{
+    margin-bottom: 2rem;
+}
+#h-sec-4 .row{
+    margin-top: 2rem;
+}
 .CSSSelectorTitle{
     width: 10%;
     text-align: center;
@@ -78,6 +83,7 @@
     font-weight: 300;
     border: 0;
 }
+
 .breadcrumb {
     background-color: rgba(243, 146, 146, 0.3);
     
@@ -87,10 +93,49 @@
     color: black;
 }
 
-#h-sec-3 .card {
+#h-sec-3 .card,#h-sec-4 .card {
     background-color:  rgba(243, 146, 146, 0.3);
 }
 
 #h-sec-3 p {
     font-weight: 400;
+}
+
+/* #h-sec-4 .page-link{
+    background-color: rgba(235, 192, 192, 0.5);
+} */
+
+
+.page-link:hover {
+    background-color: #f3eaea;
+}
+
+#HExampleArea {
+    background-color: rgba(243, 146, 146, 0.3);
+
+}
+
+.c4e1-3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.c4e2-3{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.c4e3-3{
+    color: black;
+    
+}
+.c4e4-3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.c4e5-3{
+    color: black;
+}
+.c4e6-3{
+    color: black;
 }

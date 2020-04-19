@@ -1,4 +1,5 @@
 max = 5; //FOR KEYBOARD PAGE CONTROL
+exampleStart = false;
 csstxt = "body {<br>   color:white<br> }<br> h1 {<br>   font-size: medium<br>    } <br> p {<br>   olor:black<br>   ;margin: 1rem<br> }<br>";
 function CSSSelector(pageID) {
     switch (pageID) {
@@ -20,6 +21,38 @@ function CSSSelector(pageID) {
     setTimeout(function () { $("#CSSSelector" + pageID).fadeIn(200); }, 200);
 }
 
+function CSSDemo(cssID) {
+    if (!exampleStart) {
+        exampleStart = true;
+        $("#HExampleArea").addClass("col-lg-6");
+        $("#HECode").css("display", "");
+        $("#HExampleWelcome").fadeOut(300);
+
+        setTimeout(function () {
+            $("#HExampleContent").fadeIn(300);
+            $("#HExampleDisplay").css("background-color", "white");
+        }, 300);
+    }
+    for (let index = 40; index < 44; index++) {
+        $("#c" + index).fadeOut(200);
+    }
+    for (let index = 1; index < 7; index++) {
+        $("#c4e" + index).removeClass();
+        $("#c4e" + index).addClass("c4e" + index + "-"+cssID);
+
+    }
+    switch (cssID) {
+        case 1:
+            
+            break;
+    
+        default:
+            break;
+    }
+
+    setTimeout(function () { $("#c4" + cssID).fadeIn(200); }, 200);
+}
+
 function csOnclick(csid) {
     for (let index = 30; index < 36; index++) {
         $("#c" + index).css("background-color", "rgba(243, 146, 146, 0.3)");
@@ -34,7 +67,7 @@ function csOnclick(csid) {
             $("#c31").css("background-color", "rgba(243, 200, 200, 0.8)");
             $("#c33").css("background-color", "rgba(243, 200, 200, 0.8)");
             $("#c35").css("background-color", "rgba(243, 200, 200, 0.8)");
-            
+
             break;
         case 2:
             $("#c34").css("background-color", "rgba(243, 200, 200, 0.8)");
