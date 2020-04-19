@@ -1,53 +1,51 @@
 #h-sec-1 {
     background-image: url(../media/yellow.jpg);
-  }
-  
-  #h-sec-2 {
+}
+
+#h-sec-2 {
     background-image: url(../media/y2.jpg);
-  }
-  
-  #h-sec-3 {
+}
+
+#h-sec-3 {
     background-image: url(../media/p3.jpg);
-  }
-  
-  #h-sec-4 {
+}
+
+#h-sec-4 {
     background-image: url(../media/red5.jpg);
-  }
-  
-  #h-sec-5 {
+}
+
+#h-sec-5 {
     background-image: url(../media/blue.jpg);
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: white;
-  }
-  
-  #homeText, .home-icons {
+}
+
+#homeText, .home-icons {
     display: none;
-  }
+}
 
-  .blockquote{
-      font-size: large;
-  }
+.blockquote {
+    font-size: large;
+}
 
-  .CSSCodeTitle{
-      width:30%;
-      /* position: relative; */
-      text-align: center;
-      font-size: x-large;
-      
+.CSSCodeTitle {
+    width: 30%;
+    /* position: relative; */
+    text-align: center;
+    font-size: x-large;
+}
 
-  }
+.CSSCodeDes {
+    /* left: 30%; */
+    /* position: absolute; */
+    text-align: left;
+    max-width: 70%;
+    font-size: medium;
+    top: 0;
+    padding-right: 2vw;
+}
 
-  .CSSCodeDes{
-      /* left: 30%; */
-      /* position: absolute; */
-      text-align: left;
-      max-width: 70%;
-      font-size: medium;
-      top: 0;
-      padding-right: 2vw;
-  }
-
-  /* .CSSCodeDes:hover{
-    border: 1px solid black;
-} */
+.card-body {
+    padding: 0.5rem 1rem;
+}
