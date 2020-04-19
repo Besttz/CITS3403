@@ -166,6 +166,7 @@ function modalMaker(buttonID) {
                 document.getElementById("htmlExampleModalBody").innerHTML = "Paragraph element must be added inside BODY element.<br> Please check again.";
             } else {
                 document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your content.";
+                $("#htmlExampleModalInput1").attr("placeholder", "Enter here!");
                 exampleClicked = 5;
                 $("#htmlExampleModalInput1").removeClass("d-none");
             }
@@ -184,6 +185,19 @@ function modalMaker(buttonID) {
             break;
         case 6:
             document.getElementById("htmlExampleModalHead").innerHTML = "Link";
+            if (!bodyADD) {
+                exampleClicked = 0;
+                document.getElementById("htmlExampleModalBody").innerHTML = "Link element must be added inside BODY element.<br> Please check again.";
+            } else {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your Link.";
+                exampleClicked = 6;
+                $("#htmlExampleModalInput1").removeClass("d-none");
+                $("#htmlExampleModalInput1").attr("placeholder", "Enter the URL of your link with \"Http(s)://\".");
+                $("#htmlExampleModalInput2").removeClass("d-none");
+                $("#htmlExampleModalInput2").attr("placeholder", "Enter the title(display content) of your link.");
+
+
+            }
 
             break;
         case 7:
@@ -424,18 +438,54 @@ $(document).ready(function () {
                     document.getElementById("htmlExampleModalInput1").value + "&lt;/title&gt;";
                 $("#hECode2").fadeIn(500);
                 document.getElementById("HETitle").innerHTML = document.getElementById("htmlExampleModalInput1").value;
+                document.getElementById("htmlExampleModalInput1").value = "";
+                $("#htmlExampleModalInput1").addClass("d-none");
                 break;
 
+
+            case 4:
+                $("#hEndOfBody").before('<div class="card" style="background-color:#FFDEAA ;">' +
+                    '<div class=" card-body">' +
+                    '&lt;h1&gt;' + document.getElementById("htmlExampleModalInput1").value + '&lt;/h1&gt;'
+                    + '</div>');
+
+
+                $("#hEndOfBrowser").before('<div class="broswerH">' +
+                    document.getElementById("htmlExampleModalInput1").value + '</div>');
+                document.getElementById("htmlExampleModalInput1").value = "";
+                $("#htmlExampleModalInput1").addClass("d-none");
+                break;
 
             case 5:
                 $("#hEndOfBody").before('<div class="card" style="background-color:#9DC6CA ;">' +
                     '<div class=" card-body">' +
                     '&lt;p&gt;' + document.getElementById("htmlExampleModalInput1").value + '&lt;/p&gt;'
-                    + '</div>')
+                    + '</div>');
 
 
                 $("#hEndOfBrowser").before('<div class="broswerP">' +
                     document.getElementById("htmlExampleModalInput1").value + '</div>');
+                document.getElementById("htmlExampleModalInput1").value = "";
+                $("#htmlExampleModalInput1").addClass("d-none");
+                break;
+
+            case 6:
+
+                $("#hEndOfBody").before('<div class="card" style="background-color:#F99A75 ;">' +
+                    '<div class=" card-body">' +
+                    '&lt;a href="' + document.getElementById("htmlExampleModalInput1").value + '"&gt;'
+                    + document.getElementById("htmlExampleModalInput2").value + '&lt;/a&gt;'
+                    + '</div>');
+
+                $("#hEndOfBrowser").before('<a class="broswerA" href="' +
+                    document.getElementById("htmlExampleModalInput1").value + '">' +
+                    document.getElementById("htmlExampleModalInput2").value + '</a>');
+                document.getElementById("htmlExampleModalInput1").value = "";
+                $("#htmlExampleModalInput1").addClass("d-none");
+                document.getElementById("htmlExampleModalInput2").value = "";
+                $("#htmlExampleModalInput2").addClass("d-none");
+                break;
+
             default:
                 break;
         }
