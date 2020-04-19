@@ -27,10 +27,10 @@ function CSSDemo(cssID) {
         $("#HExampleArea").addClass("col-lg-6");
         $("#HECode").css("display", "");
         $("#HExampleWelcome").fadeOut(300);
+        $("#HExampleDisplay").css("background-color", "white");
 
         setTimeout(function () {
             $("#HExampleContent").fadeIn(300);
-            $("#HExampleDisplay").css("background-color", "white");
         }, 300);
     }
     for (let index = 40; index < 44; index++) {
@@ -38,14 +38,19 @@ function CSSDemo(cssID) {
     }
     for (let index = 1; index < 7; index++) {
         $("#c4e" + index).removeClass();
-        $("#c4e" + index).addClass("c4e" + index + "-"+cssID);
+        $("#c4e" + index).addClass("c4e" + index + "-" + cssID);
 
     }
     switch (cssID) {
-        case 1:
-            
+        case 0:
+            $("#HExampleDisplay").css("background-color", "#222");
+
             break;
-    
+
+        case 3:
+            $("#HExampleDisplay").css("background-color", "white");
+            break;
+
         default:
             break;
     }
