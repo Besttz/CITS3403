@@ -196,13 +196,20 @@ function modalMaker(buttonID) {
                 $("#htmlExampleModalInput1").attr("placeholder", "Enter the URL of your link with \"Http(s)://\".");
                 $("#htmlExampleModalInput2").removeClass("d-none");
                 $("#htmlExampleModalInput2").attr("placeholder", "Enter the title(display content) of your link.");
-
-
             }
 
             break;
         case 7:
             document.getElementById("htmlExampleModalHead").innerHTML = "Image";
+            if (!bodyADD) {
+                exampleClicked = 0;
+                document.getElementById("htmlExampleModalBody").innerHTML = "Image element must be added inside BODY element.<br> Please check again.";
+            } else {
+                document.getElementById("htmlExampleModalBody").innerHTML = "Please enter your source link.<br> Or click OK directly to use default image.";
+                exampleClicked = 7;
+                $("#htmlExampleModalInput1").removeClass("d-none");
+                $("#htmlExampleModalInput1").attr("placeholder", "Enter the URL of your image with \"Http(s)://\".");
+            }
 
             break;
         default:
@@ -485,6 +492,22 @@ $(document).ready(function () {
                 $("#htmlExampleModalInput1").addClass("d-none");
                 document.getElementById("htmlExampleModalInput2").value = "";
                 $("#htmlExampleModalInput2").addClass("d-none");
+                break;
+
+            case 7:
+                if (document.getElementById("htmlExampleModalInput1").value =="") {
+                    document.getElementById("htmlExampleModalInput1").value = "../media/img1.png";
+                }
+                $("#hEndOfBody").before('<div class="card" style="background-color:#DA4167 ;">' +
+                    '<div class=" card-body">' +
+                    '&lt;img src="' + document.getElementById("htmlExampleModalInput1").value + '&lt;/img&gt;'
+                    + '</div>');
+
+                $("#hEndOfBrowser").before('<img class=" " src="' +
+                    document.getElementById("htmlExampleModalInput1").value + '">');
+                document.getElementById("htmlExampleModalInput1").value = "";
+                $("#htmlExampleModalInput1").addClass("d-none");
+
                 break;
 
             default:
