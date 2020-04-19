@@ -91,8 +91,9 @@
   <div id="h-sec-2" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
       <div class="row">
-        <div class="col-lg-6" id="homeText2">
-          <h1 id="headText2" class="text-center text-uppercase">Now let's look at CSS code</h1>
+        <!--CSS Code Description-->
+        <div class="col-lg-6">
+          <h1 class="text-center text-uppercase">Now let's look at CSS code</h1>
           <!--CSS Code Explain-->
           <p class="h-sec-2-p text-center text-justify">
             There are three different ways to combine CSS with the HTML documents. <br>Click the area below to see how
@@ -194,94 +195,99 @@
   <!--Screen 3-->
   <div id="h-sec-3" class="container-fluid font-shadow-white d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
-      <h1 class="headText3 text-center text-uppercase">The history of HTML</h1>
+      <h1 class="text-center text-uppercase">How to combine CSS and HTML Elements</h1>
 
       <div class="row">
-        <!--Timeline-->
-        <div class="col-md-6">
-          <div class="timeline">
-            <div id="history0" class="timelinebox left">
-              <div class="timeline-content">
-                <h2>Before W3C</h2>
-                <p>Tim Berners-Lee created HTML </p>
-              </div>
+        <!--Selectors Info-->
+        <div class="col-lg-6">
+          <h2 class="text-center text-uppercase">CSS SELECTORS</h1>
+            <!--CSS Code Explain-->
+            <p class="h-sec-2-p text-center text-justify">
+              CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
+              attrbute. Here are some basic selectors.
+            </p>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle text-uppercase">P</div>
+              <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
             </div>
-            <div id="history1" class="timelinebox right">
-              <div class="timeline-content">
-                <h2>1993</h2>
-                <p>Mosaic 1.0 and W3C</p>
-              </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">#abc</div>
+              <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a document,
+                so the id selector will select one unique element which id="abc".</p>
             </div>
-            <div id="history2" class="timelinebox left">
-              <div class="timeline-content">
-                <h2>1997</h2>
-                <p>HTML 4.0 and XML</p>
-              </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">.Class</div>
+              <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
+              </p>
             </div>
-            <div id="history3" class="timelinebox right">
-              <div class="timeline-content">
-                <h2>2000</h2>
-                <p>XHTML</p>
-              </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">P.abc</div>
+              <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
+                class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
             </div>
-            <div id="history4" class="timelinebox left">
-              <div class="timeline-content">
-                <h2>2010+</h2>
-                <p>HTML 5</p>
+
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">*</div>
+              <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+            </div>
+
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">p,h1,#a</div>
+              <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
+                &lt;h1&gt;, and element with id="a"</p>
+            </div>
+
+            <p id="externalCSS2" class="text-center  text-justify" style="display: none;">
+              When writing your webpage, you can combine all of these kinds of CSS as you want. However, if some
+              properties have been defined mulitple times, the value last read will be used. Therefore the priority is
+              in
+              this order 1. Inline style (inside an HTML element) 2. External and internal style sheets (in the head
+              section) 3.Browser default<br>
+              By sprating HTML and CSS in different file, you can easily keep all your webpages in unified and easily
+              modifiable style with a better legibility, and this is an essential of complicated web application.
+            </p>
+
+        </div>
+
+        <!--Selectors Checking Area-->
+        <div class="col-lg-6">
+          <h2 id="h2-3" class="text-center text-uppercase">Click the selectors below</h2>
+          <p class="h-sec-3-p text-center  text-justify">
+            Check the CSS selectors to see what elements it refers. Are you thinking the same?
+          </p>
+          <div id="c30" class="card" style="background-color:#E3D0D3 ;">
+            <div class=" card-body">
+              &lt;body<div id="inlineCSS1" style="display: none;"> style="color:white" </div>&gt;<br>
+
+              <div id="c31" class="card" style="background-color:#ECE0E2 ;">
+                <div class="card-body">
+                  &lt;h1&gt; &lt;/h1&gt;
+                </div>
               </div>
+              <div id="c32" class="card" style="background-color:#FFF1C7 ;">
+                <div class="card-body">
+                  &lt;p&gt;
+                  &lt;/p&gt;
+                </div>
+              </div>
+              <div id="c33" class="card" style="background-color:#9DC6CA ;">
+                <div class="card-body">
+                  &lt;p&gt;<br>
+                  <div id="c34" class="card" style="background-color:#B1DFEF ;">
+                    <div class="card-body">
+                      &lt;img src=" ../html.png" alt="image" &gt;<br></div>
+                  </div>
+                  &lt;/p&gt;
+                </div>
+              </div>
+              <div id="c35" class="card" style="background-color:#B1DFEF ;">
+                <div class="card-body">
+                  &lt;img src=" ../html.png" alt="image" &gt;<br></div>
+              </div>
+              &lt;/body&gt;
             </div>
           </div>
-        </div>
-        <!--History Showing Area-->
-        <div class="col-md-6">
-          <h2 id="h2-3" class="text-center text-uppercase">Click the timeline</h2>
-          <p class="h-sec-3-p text-center  text-justify">
-            Click the time period from the timeline to see what important things happened in the history of HTML.
-          </p>
-          <p id="historyp0" class="h-sec-3-p text-center  text-justify" style="display: none;">
-            In late 1980, as the development of computer networks, a researcher named Tim Berners-Lee proposed an
-            Internet-based hypertext system for sharing documents. Then on the Christmas day of 1990, he created the
-            first browser called WorldWideWeb. He also launched the world's first website in 1991. Later on, he
-            published a document named HTML Tags which contained the first 18 HTML tags with description.<br>
-            <img class="img-fluid" src="media/1991.png" alt="HTML document">
-          </p>
-          <p id="historyp1" class="h-sec-3-p text-center  text-justify" style="display: none;">
-            Students from the University of Illinois programmed NCSA Mosaic, one of the first web browsers with a
-            graphical interface which gained worldwide popularity among the general public shortly. <br>
-            In 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C). The main objective is the development
-            of Web standards for the World Wide Web (WWW).It developed standards for HTML, XHML, XML, or CSS markup
-            languages. <br>
-            The Mosaic Communications Corporation (renamed Netscape) launched with the Netscape Navigator browser in
-            1994, it became widely popular in a short period. Then Microsoft released IE 1.0 in 1995. HTML 2.0 standard
-            also published this year.
-            <img class="img-fluid" src="media/1993.png" style="max-height: 10rem;" alt="browser1">
-            <img class="img-fluid" src="media/1993-2.png" style="max-height: 10rem;" alt="browser2">
 
-          </p>
-          <p id="historyp2" class="h-sec-3-p text-center  text-justify" style="display: none;">
-            In this year, W3C published official recommendations for both the HTML 3.2 and 4.0 specification. Also, The
-            term Dynamic HTML (DHTML) was first introduced with IE 4.0, it is the combination of the HTML, CSS, and
-            JavaScript technology, most of the modern websites are using these three components. <br>
-            W3C also published the final recommendation for the XML(Extensible Markup Language) 1.0 specification in
-            1998..
-          </p>
-          <p id="historyp3" class="h-sec-3-p text-center  text-justify" style="display: none;">
-            W3C issued official recommendations for the XHTML(Extensible HyperText Markup Language) 1.0 specification,
-            integration of XML and HTML. According to W3C’s original plans, XHTML was supposed to be the successor to
-            HTML.<br> However it wasn't accepted by browser vendors, Web development companies. A new organization was
-            formed in 2004, the Web Hypertext Application Technology (WHAT) Working Group, then they started working on
-            the next generation of HTML, which based on HTML 4.01, rather than XHTML 1.1.<br>
-            In 2006, W3C announced they would begin working with the WHAT Working Group. Both CSS and Javascript get
-            fast development during this decade.
-
-          </p>
-          <p id="historyp4" class="h-sec-3-p text-center  text-justify" style="display: none;">
-            In 2010, the concept "Responsive Web Design" was introduced, it describes a new way of styling HTML
-            documents. It allows website content display concerning resolution or display size, the same content will be
-            able to display on mobile device or desktop in different layout or font size.<br>
-            After few years development, W3C adopted the final recommendation for the HTML5 markup language, This
-            website also implement lot of the HTML 5 new freatures combine with CSS3 and javascript.
-          </p>
         </div>
       </div>
     </div>
