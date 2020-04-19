@@ -3,11 +3,11 @@
   }
   
   #h-sec-2 {
-    background-image: url(../media/red2.jpg);
+    background-image: url(../media/y2.jpg);
   }
   
   #h-sec-3 {
-    background-image: url(../media/red3.jpg);
+    background-image: url(../media/p3.jpg);
   }
   
   #h-sec-4 {
@@ -28,3 +28,26 @@
   .blockquote{
       font-size: large;
   }
+
+  .CSSCodeTitle{
+      width:30%;
+      /* position: relative; */
+      text-align: center;
+      font-size: x-large;
+      
+
+  }
+
+  .CSSCodeDes{
+      /* left: 30%; */
+      /* position: absolute; */
+      text-align: left;
+      max-width: 70%;
+      font-size: medium;
+      top: 0;
+      padding-right: 2vw;
+  }
+
+  /* .CSSCodeDes:hover{
+    border: 1px solid black;
+} */

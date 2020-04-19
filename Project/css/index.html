@@ -88,13 +88,50 @@
   </div>
 
   <!--Screen 2-->
-  <div id="h-sec-2" class="container-fluid font-shadow-black d-flex align-items-center justify-content-center">
+  <div id="h-sec-2" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
       <div class="row">
-        <!--HTML Code Card-->
+        <div class="col-lg-6" id="homeText2">
+          <h1 id="headText2" class="text-center text-uppercase">Now let's look at CSS code</h1>
+          <!--CSS Code Explain-->
+          <p class="h-sec-2-p text-center text-justify">
+            There are three different ways to combine CSS with the HTML documents. <br>Click the area below to see how
+            it
+            looks.
+          </p>
+          <div id="inlineCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">Inline</div>
+            <p class="CSSCodeDes">The most simple and direct way to set style for a single element. Just add the style
+              attribute to the relevant element in the tag then set any CSS property.</p>
+
+          </div>
+          <div id="InternalCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">Internal</div>
+            <p class="CSSCodeDes">CSS stylesheet which affect one single HTML document, use selectors to indicate
+              elements, it is defined inside the &lt;style&gt; element in the head section.
+            </p>
+
+          </div>
+          <div id="externalCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">External</div>
+            <p class="CSSCodeDes">Same form as the internal CSS, but in sperate file from the HTML document. Each
+              stylesheet can be referenced by multiple webpages by using &lt;link&gt; element inside the head section.
+            </p>
+
+          </div>
+          <p id="externalCSS2" class="text-center  text-justify" style="display: none;">
+            It specifies the character set used for this document. The most popular one used for the Web is the UTF-8.
+            <br>
+            Setting the wrong character set may make the content recognizable.
+          </p>
+
+        </div>
+
+        <!--CSS Code Card-->
         <div class="col-lg-6 font-shadow-none">
           <div class="htmlCode">
-            <div id="hCode0" class="card rounded mb-10 " style="background-color:rgba(239, 71, 111, 0.5)">
+            <div id="hCode0" class="card rounded mb-10 "
+              style="border-radius:10px; background-color:rgba(235, 235, 215, 0.9)">
               <div class="card-body">
                 &lt;!DOCTYPE html&gt;<br>
                 &lt;html lang="en-US"&gt;<br>
@@ -103,11 +140,6 @@
                     <div id="hCode2" class="card" style="background-color:#C59893 ;">
                       <div class="card-body">
                         &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
-                      </div>
-                    </div>
-                    <div id="hCode3" class="card" style="background-color:#5E96CD ;">
-                      <div class="card-body">
-                        &lt;meta charset="utf-8"&gt;
                       </div>
                     </div>
 
@@ -126,25 +158,15 @@
                         &lt;/h1&gt;
                       </div>
                     </div>
-                    <div id="hCode6" class="card" style="background-color:#3D4C5F ;">
-                      <div class="card-body">
-                        &lt;h3&gt;
-                        This is the most basic html document.
-                        &lt;/h3&gt;
-                      </div>
-                    </div>
+
                     <div id="hCode7" class="card" style="background-color:#9DC6CA ;">
                       <div class="card-body">
-                        &lt;p&gt;<br>
-                        Here is the main paragraph of this document with an image below.<br>
-                        <div id="hCode8" class="card" style="background-color:#F15E6E ;">
-                          <div class="card-body">
-                            &lt;img src=" ../../media/html.png" alt="image" &gt;<br></div>
-                        </div>
+                        &lt;p&gt;
+                        Here is the main paragraph of this document with an image below.
                         &lt;/p&gt;
                       </div>
                     </div>
-
+                    &lt;/body&gt;
                   </div>
                 </div>
                 <br>
@@ -154,60 +176,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6" id="homeText2">
-          <h1 id="headText2" class="text-center text-uppercase">Now let's look at some code</h1>
-          <!--HTML Code Explain-->
-          <p id="homeP2" class="h-sec-2-p text-center text-justify">
-            Although HTML is not a programming language, the program running behind is usually written in Javascript
-            which we will see later. HTML simply tells the browser what does it have in the documents. It uses tags to
-            make the document a tree structure, you can see the whole structure of a basic but working webpage.<br>
-            <strong> Click any block of nodes to see how it works!</strong>
-            <br>
-            <a href="examples/1.html">Check how this example works in your browser.</a>
-          </p>
-          <p id="htmlP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            This is the root node of the HTML tree structure. Every element contained by this HTML document is inside
-            this element.<br>
-            The &lt;!DOCTYPE html&gt; tag specifies the particular SGML Document-Type Definition, telling the browser
-            this is an HTML document. lang="en-US" property tells the browser the language of this document.
-          </p>
-          <p id="headP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            One of the two directly children of the HTML element. The content in the HEAD element will now display to
-            users. It only provides information about the document, it should always contain two elements, a title and a
-            meta.
 
-          </p>
-          <p id="titleP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            It specifies the title of this document. It is usually displayed at the top of the browser window, or at the
-            tab bar.
-
-          </p>
-          <p id="linkP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            It specifies the character set used for this document. The most popular one used for the Web is the UTF-8.
-            <br>
-            Setting the wrong character set may make the content recognizable.
-          </p>
-          <p id="bodyP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            The body element provides the contents of this document, everything you can see inside the browser is inside
-            this tag.
-          </p>
-          <p id="headingP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            There are usually headings before the sections of paragraphed text. There are six levels of headings in
-            HTML, by using these tags, the browser will use larger font size and boldface font, &lt;h1&gt; is the
-            highest-level heading.
-
-          </p>
-          <p id="pP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            P stands for the paragraph. The browser usually puts words to fit the lines in the window for displaying
-            text like other word processor programs.
-
-          </p>
-          <p id="imgP" class="h-sec-2-p text-center  text-justify" style="display: none;">
-            As the name of this tag, it is used for inserting images into the display of a document. The source file
-            for this image is specified in an element. The browser will download the image file from "
-            ../../media/html.png" and display in the window.
-          </p>
-        </div>
       </div>
     </div>
     <a id="prev2" href="#h-sec-1"></a>
@@ -215,7 +184,7 @@
   </div>
 
   <!--Screen 3-->
-  <div id="h-sec-3" class="container-fluid font-shadow-black d-flex align-items-center justify-content-center">
+  <div id="h-sec-3" class="container-fluid font-shadow-white d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
       <h1 class="headText3 text-center text-uppercase">The history of HTML</h1>
 
