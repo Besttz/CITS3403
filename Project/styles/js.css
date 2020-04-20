@@ -8,7 +8,7 @@
 }
 
 #h-sec-3 {
-    background-image: url(../media/p3.jpg);
+    background-image: url(../media/b3.jpg);
     /* color: white; */
 }
 
@@ -41,4 +41,28 @@
     font-size: medium;
     top: 0;
     padding-right: 2vw;
+}
+#h-sec-3 h1 {
+    margin-bottom: 3rem;
+}
+
+#h-sec-4 h1 {
+    margin-bottom: 2rem;
+}
+.page-link {
+    background-color: rgba(145, 192, 236, 0.5);
+    color: black;
+    font-weight: 300;
+    border: 0;
+}
+#h-sec-3 .card {
+    background-color: rgba(145, 192, 236, 0.3);
+}
+.JSSelectorDes {
+    text-align: left;
+    max-width: 90%;
+    font-size: medium;
+    top: 0;
+    padding-right: auto;
+    margin-bottom: 0.5rem;
 }

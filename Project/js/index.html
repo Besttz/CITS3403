@@ -75,7 +75,8 @@
             element you have seen is powered by JavaScript. When you touch some button, the behaviour is detected by the
             browser, it will execute some specific JS code to change some content. You can try to use arrow keys left
             and
-            right to turn the pages in this website, it is also driven by JavaScript. Click this paragraph to have a try!
+            right to turn the pages in this website, it is also driven by JavaScript. Click this paragraph to have a
+            try!
           </p>
         </div>
       </div>
@@ -93,13 +94,13 @@
         <div class="col-lg-6">
           <h1 class="text-center text-uppercase">Now let's look at the code</h1>
           <!--JS Code Explain-->
-          <p class="h-sec-2-p text-center text-justify">
+          <p class="text-center text-justify">
             There are also three different ways to combine JS with the HTML documents like CSS. You can place any script
             in an HTML document, or in external files and reference in the HTML document, as long as the code is read by
             the browser when it's going to be executed.<br>
             <strong>Click the area below to see how it looks.</strong>
           </p>
-          <div id="j21"" class=" text-center d-flex text-justify timeline-content">
+          <div id="j21" class="text-center d-flex text-justify timeline-content">
             <div class="JSCodeTitle text-uppercase">BODY</div>
             <p class="JSCodeDes">Some JS code is placed inside the body element of an HTML document before a button
               element, so when the user clicks the button, it will change the heading.</p>
@@ -114,23 +115,14 @@
           </div>
           <div id="j23" class="text-center d-flex text-justify timeline-content">
             <div class="JSCodeTitle text-uppercase">External</div>
-            <p class="JSCodeDes">When the same JS code is used in many HTML documents, 
+            <p class="JSCodeDes">When the same JS code is used in many HTML documents,
               the best way is to place them in an external file. Like external CSS, it is easy maintenance.
             </p>
-
           </div>
-          <p id="externalCSS2" class="text-center  text-justify" style="display: none;">
-            When writing your webpage, you can combine all of these kinds of CSS as you want. However, if some
-            properties have been defined mulitple times, the value last read will be used. Therefore the priority is in
-            this order 1. Inline style (inside an HTML element) 2. External and internal style sheets (in the head
-            section) 3.Browser default<br>
-            By sprating HTML and CSS in different file, you can easily keep all your webpages in unified and easily
-            modifiable style with a better legibility, and this is an essential of complicated web application.
-          </p>
 
         </div>
 
-        <!--CSS Code Card-->
+        <!--JS Code Card-->
         <div class="col-lg-6 font-shadow-none">
           <div class="htmlCode">
             <div class="card" style="background-color:rgba(240, 235, 230, 0.9)">
@@ -145,12 +137,11 @@
                       </div>
                     </div>
                     <div id="j222" class="card" style="display: none; background-color:#B2EFCF ;">
-                      <div id="CSSBlock2" class="card-body">
+                      <div class="card-body">
                         &lt;script<span id="j231"></span>
                         &lt;/script&gt;
                       </div>
                     </div>
-
                     &lt;/head&gt;
                   </div>
                 </div>
@@ -188,19 +179,13 @@
               </div>
             </div>
             <div id="j232" class="card" style="display: none; background-color:#B2EFCF ;">
-              <div id="CSSBlock2" class="card-body">
+              <div class="card-body">
                 <strong>FILE: myScript.js <br></strong>
                 function button(){<br> document.getElementById('heading').innerHTML='You Clicked'}
-
               </div>
-            </div>
-            <div id="CSSBlock3" class="card" style="display: none; background-color:#FFF5D9 ;">
-              <div id="CSSBlock4" class="card-body"></div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
     <a id="prev2" href="#h-sec-1"></a>
@@ -215,74 +200,69 @@
       <div class="row">
         <!--Selectors Info-->
         <div class="col-lg-6">
-          <h2 class="text-center text-uppercase">CSS SELECTORS</h2>
-          <!--CSS Code Explain-->
-          <!--Basic Explain-->
-          <div id="CSSSelector0">
-            <p class="h-sec-2-p text-center text-justify">
-              CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
-              attrbute. Here are some basic selectors.
+          <!--JS Explain-->
+          <!--DOM Explain-->
+          <div id="j31">
+            <h2 class="text-center text-uppercase">Document Object Model</h2>
+
+            <p class="text-center text-justify">
+              DOM stands for Document Object Model is a W3C standard, it defines a standard for accessing elements of a
+              document by scripting languages. It provides the methods to access the HTML elements, The properties and
+              The events for all HTML elements. When a document is loaded, a Document Object Model of the page created
+              automatically by the browsers. So that our JavaScript program can modify the content of the webpage to
+              make it dynamic and interactable.<br>
+              Click these DOM methods below to try.
             </p>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle text-uppercase">P</div>
-              <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
+            <div id="j330" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(0)">
+              <p class="JSSelectorDes">document.getElementById(no.1)</p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">#abc</div>
-              <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a
-                document,
-                so the id selector will select one unique element which id="abc".</p>
+            <div id="j331"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(1)">
+              <p class="JSSelectorDes">document.getElementsByTagName(h1)</p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">.Class</div>
-              <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
-              </p>
+            <div id="j332"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(2)">
+              <p class="JSSelectorDes">document.getElementsByClassName(main)</p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">P.abc</div>
-              <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
-                class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
+            <div id="j333"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(3)">
+              <p class="JSSelectorDes">document.getElementById(a).innerHTML="Changed by DOM!"</p>
             </div>
 
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">*</div>
-              <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+            <div id="j334"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(4)">
+              <p class="JSSelectorDes">document.getElementById(no1).src="../img.png" </p>
             </div>
 
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">p,h1,#a</div>
-              <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
-                &lt;h1&gt;, and element with id="a"</p>
+            <div id="j335"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(5)">
+              <p class="JSSelectorDes">document.getElementById(a).style.color = "white";</p>
             </div>
           </div>
-          <!--Combanator Explain-->
-          <div id="CSSSelector1" style="display: none;">
+          <!--JQuery Explain-->
+          <div id="j32" style="display: none;">
+            <h2 class="text-center text-uppercase">JQuery</h2>
             <p class="h-sec-2-p text-center text-justify">
               The CSS selectors can contain more than one selector with a combinator, different combinators mean
               different relationship between the elements.
             </p>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle text-uppercase">space</div>
-              <p class="CSSSelectorDes">The descendant selector matches all elements that are descendants of a
+            <div id="j336"  class="text-center d-flex text-justify timeline-content">
+              <div class=" text-uppercase">space</div>
+              <p class="JSSelectorDes">The descendant selector matches all elements that are descendants of a
                 specified element.
                 'p img' selects all &lt;img&gt; elements inside lt;p&gt; elements: </p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle text-uppercase">&gt;</div>
-              <p class="CSSSelectorDes">The child selector(&gt;) selects all elements that are the children of a
+            <div id="j337"  class="text-center d-flex text-justify timeline-content">
+              <div class=" text-uppercase">&gt;</div>
+              <p class="JSSelectorDes">The child selector(&gt;) selects all elements that are the children of a
                 specified element. 'p&gt;img' selects all &lt;img&gt; elements are children of a &lt;p&gt; element.
               </p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">+</div>
-              <p class="CSSSelectorDes">The adjacent sibling selector selects all elements that are the adjacent
+            <div id="j338"  class="text-center d-flex text-justify timeline-content">
+              <div class="">+</div>
+              <p class="JSSelectorDes">The adjacent sibling selector selects all elements that are the adjacent
                 siblings of a specified element.
                 'p+img' selects all &lt;img&gt; elements immediately after a &lt;p&gt; element.
               </p>
             </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">~</div>
-              <p class="CSSSelectorDes">
+            <div id="j339"  class="text-center d-flex text-justify timeline-content">
+              <div class="">~</div>
+              <p class="JSSelectorDes">
                 The general sibling selector selects all elements that are siblings of a element.
                 'p~img' selects all &lt;img&gt; elements are siblings of &lt;p&gt; element.
               </p>
@@ -290,82 +270,48 @@
 
 
           </div>
-          <!--Pseudo Class Explain-->
-          <div id="CSSSelector2" style="display: none;">
-            <p class="h-sec-2-p text-center text-justify">
-              A pseudo-class is used to define a special state of an element,
-              including a mouses over it, an element gets focus or a link is visited.
-              You can make some animation by pseudo-class, like getting bigger when user's mouse is on one element.
-              Below are some examples.<br>
-              <strong>Syntax:</strong> selector:pseudo-class { property:value; }
-            </p>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">hover</div>
-              <p class="CSSSelectorDes">Special style on mouse over.</p>
-            </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">link</div>
-              <p class="CSSSelectorDes">Special style on unvisited links.</p>
-            </div>
-            <div class="text-center d-flex text-justify">
-              <div class="CSSSelectorTitle">focus</div>
-              <p class="CSSSelectorDes">Special style on the input element that has focus</p>
-            </div>
-          </div>
+
           <!--Explain Page Buttons -->
-          <ul class="CSSSelectorPage pagination justify-content-center">
-            <li class="page-item"><a id="CSSSelectorPage1" class="page-link" href="javascript:void(0);"
-                onclick="CSSSelector(0)">Basic</a></li>
-            <li class="page-item"><a id="CSSSelectorPage2" class="page-link" href="javascript:void(0);"
-                onclick="CSSSelector(1)">Combanation</a></li>
-            <li class="page-item"><a id="CSSSelectorPage3" class="page-link" href="javascript:void(0);"
-                onclick="CSSSelector(2)">Pseudo-classes</a></li>
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a id="j331" class="page-link" href="javascript:void(0);"
+                onclick="JSSelector(31)">DOM</a></li>
+            <li class="page-item"><a id="j332" class="page-link" href="javascript:void(0);"
+                onclick="JSSelector(32)">JQuery</a></li>
+
           </ul>
         </div>
 
-        <!--Selectors Checking Area-->
+        <!--JS Checking Area-->
         <div class="col-lg-6">
-          <h2 id="h2-3" class="text-center text-uppercase">Click the selectors below</h2>
-          <p class="h-sec-3-p text-center  text-justify">
-            Check the CSS selectors to see what elements it refers. Are you thinking the same?
-          </p>
+          <h2 id="h2-3" class="text-center text-uppercase">CHECK the elements below</h2>
 
-          <!--Buttons-->
-          <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a id="cs0" href="javascript:void(0);">*</a></li>
-            <li class="breadcrumb-item"><a id="cs1" href="javascript:void(0);">.main</a></li>
-            <li class="breadcrumb-item"><a id="cs2" href="javascript:void(0);">#no1</a></li>
-            <li class="breadcrumb-item"><a id="cs3" href="javascript:void(0);">body img</a></li>
-            <li class="breadcrumb-item"><a id="cs4" href="javascript:void(0);">body&gt;img</a></li>
-            <li class="breadcrumb-item"><a id="cs5" href="javascript:void(0);">p+img</a></li>
-          </ul>
 
-          <div id="c30" class="card">
+          <div id="j340" class="card">
             <div class="card-body">
               &lt;body&gt;<br>
 
-              <div id="c31" class="card">
+              <div id="j341" class="card">
                 <div class="card-body">
                   &lt;h1 class="main"&gt; &lt;/h1&gt;
                 </div>
               </div>
-              <div id="c32" class="card">
+              <div id="j342" class="card">
                 <div class="card-body">
-                  &lt;p&gt;
+                  &lt;p id="a" <span id="j3403" style="display: none;"">style="color:white;"</span>&gt; <span id="j3401" style="display: none;">Changed by DOM!</span>
                   &lt;/p&gt;
                 </div>
               </div>
-              <div id="c33" class="card">
+              <div id="j343" class="card">
                 <div class="card-body">
                   &lt;p class="main" &gt;<br>
-                  <div id="c34" class="card">
+                  <div id="j344" class="card">
                     <div class="card-body">
-                      &lt;img id="no1" src=" ../html.png" alt="image" &gt;<br></div>
+                      &lt;img id="no1"src=" <span id="j3402">../html.png</span>" alt="image" &gt;<br></div>
                   </div>
                   &lt;/p&gt;
                 </div>
               </div>
-              <div id="c35" class="card">
+              <div id="j345" class="card">
                 <div class="card-body">
                   &lt;img class="main" src=" ../html.png" alt="image" &gt;<br></div>
               </div>
