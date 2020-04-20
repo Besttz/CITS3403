@@ -13,7 +13,7 @@
 }
 
 #h-sec-4 {
-    background-image: url(../media/p4.jpg);
+    background-image: url(../media/b5.jpg);
 }
 
 #h-sec-5 {
@@ -55,7 +55,7 @@
     font-weight: 300;
     border: 0;
 }
-#h-sec-3 .card {
+#h-sec-3 .card,#h-sec-4 .card {
     background-color: rgba(145, 192, 236, 0.3);
 }
 .JSSelectorDes {
@@ -65,4 +65,56 @@
     top: 0;
     padding-right: auto;
     margin-bottom: 0.5rem;
+}
+
+#j410 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #84c754;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#j411 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #84c754;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#j412 {
+    color: #84c754;
+    margin: 0.5rem 1rem 0rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+#j413 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 1rem 0rem;
+    margin: 0rem 1rem 0rem;
+    color: white;
+    border: white solid 1px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#j414 {
+    color: white;
+    margin: 0rem 1rem 0rem;
+    background-color: blue;
+    text-align: center;
+    padding: 0rem 1rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#j415 {
+    color: white;
+    font-size: x-small;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0rem 1rem 0rem;
+    text-align: center;
 }
