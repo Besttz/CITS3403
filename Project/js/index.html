@@ -73,7 +73,8 @@
             born at the end of 1995.<br>
             All the browsers you're using to surf our web museum journey support JavaScript completely, every dynamic
             element you have seen is powered by JavaScript. When you touch some button, the behaviour is detected by the
-            browser, it will execute some specific JS code to change some content. You can try to use arrow keys left and
+            browser, it will execute some specific JS code to change some content. You can try to use arrow keys left
+            and
             right to turn the pages in this website, it is also driven by JavaScript.
           </p>
         </div>
@@ -88,30 +89,32 @@
   <div id="h-sec-2" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
       <div class="row">
-        <!--CSS Code Description-->
+        <!--JS Code Description-->
         <div class="col-lg-6">
-          <h1 class="text-center text-uppercase">Now let's look at CSS code</h1>
-          <!--CSS Code Explain-->
+          <h1 class="text-center text-uppercase">Now let's look at the code</h1>
+          <!--JS Code Explain-->
           <p class="h-sec-2-p text-center text-justify">
-            There are three different ways to combine CSS with the HTML documents. <br>
+            There are also three different ways to combine JS with the HTML documents like CSS. You can place any script
+            in an HTML document, or in external files and reference in the HTML document, as long as the code is read by
+            the browser when it's going to be executed.<br>
             <strong>Click the area below to see how it looks.</strong>
           </p>
-          <div id="inlineCSS" class="text-center d-flex text-justify timeline-content">
-            <div class="CSSCodeTitle text-uppercase">Inline</div>
-            <p class="CSSCodeDes">The most simple and direct way to set style for a single element. Just add the style
-              attribute to the relevant element in the tag then set any CSS property.</p>
+          <div id="j21"" class=" text-center d-flex text-justify timeline-content">
+            <div class="JSCodeTitle text-uppercase">BODY</div>
+            <p class="JSCodeDes">A JS function is placed inside the body element of an HTML document before a button
+              element, so when the user clicks the button, it will change the heading.</p>
 
           </div>
-          <div id="internalCSS" class="text-center d-flex text-justify timeline-content">
-            <div class="CSSCodeTitle text-uppercase">Internal</div>
-            <p class="CSSCodeDes">CSS stylesheet which affect one single HTML document, use selectors to indicate
+          <div id="j22" class="text-center d-flex text-justify timeline-content">
+            <div class="JSCodeTitle text-uppercase">HEAD</div>
+            <p class="JSCodeDes">CSS stylesheet which affect one single HTML document, use selectors to indicate
               elements, it is defined inside the &lt;style&gt; element in the head section.
             </p>
 
           </div>
-          <div id="externalCSS" class="text-center d-flex text-justify timeline-content">
-            <div class="CSSCodeTitle text-uppercase">External</div>
-            <p class="CSSCodeDes">Same form as the internal CSS, but in sperate file from the HTML document. Each
+          <div id="j23" class="text-center d-flex text-justify timeline-content">
+            <div class="JSCodeTitle text-uppercase">External</div>
+            <p class="JSCodeDes">Same form as the internal CSS, but in sperate file from the HTML document. Each
               stylesheet can be referenced by multiple webpages by using &lt;link&gt; element inside the head section.
             </p>
 
@@ -130,42 +133,51 @@
         <!--CSS Code Card-->
         <div class="col-lg-6 font-shadow-none">
           <div class="htmlCode">
-            <div id="hCode0" class="card rounded mb-10 "
-              style="border-radius:10px; background-color:rgba(240, 235, 230, 0.9)">
+            <div class="card" style="background-color:rgba(240, 235, 230, 0.9)">
               <div class="card-body">
                 &lt;!DOCTYPE html&gt;<br>
                 &lt;html lang="en-US"&gt;<br>
-                <div id="hCode1" class="card rounded mb-10 " style="background-color:#D8E3D9 ;">
+                <div class="card " style="background-color:#D8E3D9 ;">
                   <div class="card-body">&lt;head&gt;
-                    <div id="hCode2" class="card" style="background-color:#F0E5DC ;">
+                    <div class="card" style="background-color:#F0E5DC ;">
                       <div class="card-body">
                         &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
                       </div>
                     </div>
-                    <div id="CSSBlock1" class="card" style="display: none; background-color:#B2EFCF ;">
-                      <div id="CSSBlock2" class="card-body"></div>
+                    <div id="j222" class="card" style="display: none; background-color:#B2EFCF ;">
+                      <div id="CSSBlock2" class="card-body">
+                        &lt;script<span id="j231"></span>
+                        &lt;/script&gt;
+                      </div>
                     </div>
 
                     &lt;/head&gt;
                   </div>
                 </div>
                 <br>
-                <div id="hCode4" class="card" style="background-color:#E3D0D3 ;">
+                <div class="card" style="background-color:#E3D0D3 ;">
                   <div class=" card-body">
-                    &lt;body<div id="inlineCSS1" style="display: none;"> style="color:white" </div>&gt;<br>
+                    &lt;body style="color:white"&gt;<br>
 
-                    <div id="hCode5" class="card" style="background-color:#ECE0E2 ;">
+                    <div class="card" style="background-color:#ECE0E2 ;">
                       <div class="card-body">
-                        &lt;h1<div id="inlineCSS2" style="display: none;"> style="font-size: medium" </div>&gt;
+                        &lt;h1 id="heading" style="font-size: medium" &gt;
                         Hi! Welcome to HTML EXAMPLE 1！
                         &lt;/h1&gt;
                       </div>
                     </div>
-                    <div id="hCode7" class="card" style="background-color:#FFF1C7 ;">
+                    <div class="card" style="background-color:#FFF1C7 ;">
                       <div class="card-body">
-                        &lt;p<div id="inlineCSS3" style="display: none;"> style="color:black;margin: 1rem" </div>&gt;
+                        &lt;p style="color:black;margin: 1rem"&gt;
                         Here is the main paragraph of this document with an image below.
                         &lt;/p&gt;
+                      </div>
+                    </div>
+                    <div id="j211" class="card" style="display: none; background-color:#FFF1C7 ;">
+                      <div class="card-body">
+                        &lt;button onclick =
+                        <span id="j221"></span> &gt; Click Me!
+                        &lt;/button&gt;
                       </div>
                     </div>
                     &lt;/body&gt;
@@ -173,6 +185,13 @@
                 </div>
                 <br>
                 &lt;/html&gt;
+              </div>
+            </div>
+            <div id="j232" class="card" style="display: none; background-color:#B2EFCF ;">
+              <div id="CSSBlock2" class="card-body">
+                <strong>FILE: myScript.js <br></strong>
+                function button(){<br> document.getElementById('heading').innerHTML='You Clicked'}
+                
               </div>
             </div>
             <div id="CSSBlock3" class="card" style="display: none; background-color:#FFF5D9 ;">

@@ -224,3 +224,7 @@ p {
   /* font-weight: normal; */
   color: white;
 }
+
+.card{
+  border-radius:10px; 
+}
