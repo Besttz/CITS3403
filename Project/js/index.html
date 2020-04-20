@@ -11,56 +11,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../styles/main.css">
-  <script src="../scripts/html.js"></script>
+  <link rel="stylesheet" href="../styles/content.css">
+  <link rel="stylesheet" href="../styles/js.css">
+  <script src="../scripts/js.js"></script>
   <script src="../scripts/content.js"></script>
-  <style>
-    body {
-      color: #fdfdfd;
-      background-image: url(../media/blue.jpg);
-      margin-bottom: 60px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-    }
 
-
-    #bg-img {
-      position: fixed;
-      background-image: url(../media/red.jpg);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      z-index: -1;
-    }
-
-    #headText,
-    .home-icons,
-    #homeText,
-    #bg-img {
-      display: none;
-    }
-
-    .home-icons {
-      padding-top: 10vh;
-    }
-
-    .home-icon {
-      max-width: 350px;
-      max-height: 30vh;
-    }
-
-    
-  </style>
 </head>
 
 <body>
   <!--Nav Bar-->
-  <nav id="navbar" class="navbar navbar-expand-md navbar-light justify-content-center">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light justify-content-center">
     <a class="navbar-brand" href="../index.html" style="font-weight: 800;">
-      <img id="navicon" src="../media/favicon-dark.svg" alt="Logo" style="width:25px;">
+      <img src="../media/favicon-dark.svg" alt="Logo" style="width:25px;">
       WEB MUSEUM</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"> </span>
@@ -90,25 +52,529 @@
     </div>
   </nav>
   <!--Contents-->
-  <div id="homeBody" class="container-fluid">
-    <h1 id="headText" class="text-center text-uppercase">WELCOME TO WEB MUSEUM!</h1>
-    <div class="container-fluid home-icons">
+
+  <!--Screen 1-->
+  <div id="h-sec-1" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
+    <div class="content">
       <div class="row">
-        <div class="col">
-          <img id="htmlIcon" class="mx-auto d-block home-icon" src="../media/html.svg" alt="HTML logo"> </div>
+        <div class="col-sm-4 home-icons">
+          <img class="mx-auto htmlIcon d-block" src="../media/js.svg" alt="JS logo">
         </div>
+
+        <div class="col-sm-8" id="homeText">
+          <h1 class="text-center text-uppercase">JavaScript</h1>
+
+          <h2 class="text-center text-uppercase">The brain of WEB</h2>
+          <p id="homeP" class="text-center  text-justify">
+            As the development of computer network, people start to interact more with the webpage, the head of browser
+            company Netscape found that they need a scripting language written within HTML document to control the
+            browser. At that time, the internet speed is much slower and the fee is very high, so that must be helpful
+            if the browser can execute some operation rather than the server does all the things. Hence JavaScript is
+            born at the end of 1995.<br>
+            All the browsers you're using to surf our web museum journey support JavaScript completely, every dynamic
+            element you have seen is powered by JavaScript. When you touch some button, the behaviour is detected by the
+            browser, it will execute some specific JS code to change some content. You can try to use arrow keys left and
+            right to turn the pages in this website, it is also driven by JavaScript.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div id="homeText">
-      <h2 class="text-center text-uppercase">The Basic Components of WEB</h2>
-      <p id="homeP" class="text-center homepage"> Web Museum contains the main components of modern WEB development.
-        <br>
-        Choose any icon above you'd like to exploreto start your journey.</h3>
-    </div>
+    <a id="prev1" href="#h-sec-1"></a>
+    <a id="next1" href="#h-sec-2"></a>
   </div>
-  <div id="bg-img"></div>
-  <!--Footer-->
 
+  <!--Screen 2-->
+  <div id="h-sec-2" class="container-fluid font-shadow-none d-flex align-items-center justify-content-center">
+    <div class="content container-fluid">
+      <div class="row">
+        <!--CSS Code Description-->
+        <div class="col-lg-6">
+          <h1 class="text-center text-uppercase">Now let's look at CSS code</h1>
+          <!--CSS Code Explain-->
+          <p class="h-sec-2-p text-center text-justify">
+            There are three different ways to combine CSS with the HTML documents. <br>
+            <strong>Click the area below to see how it looks.</strong>
+          </p>
+          <div id="inlineCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">Inline</div>
+            <p class="CSSCodeDes">The most simple and direct way to set style for a single element. Just add the style
+              attribute to the relevant element in the tag then set any CSS property.</p>
+
+          </div>
+          <div id="internalCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">Internal</div>
+            <p class="CSSCodeDes">CSS stylesheet which affect one single HTML document, use selectors to indicate
+              elements, it is defined inside the &lt;style&gt; element in the head section.
+            </p>
+
+          </div>
+          <div id="externalCSS" class="text-center d-flex text-justify timeline-content">
+            <div class="CSSCodeTitle text-uppercase">External</div>
+            <p class="CSSCodeDes">Same form as the internal CSS, but in sperate file from the HTML document. Each
+              stylesheet can be referenced by multiple webpages by using &lt;link&gt; element inside the head section.
+            </p>
+
+          </div>
+          <p id="externalCSS2" class="text-center  text-justify" style="display: none;">
+            When writing your webpage, you can combine all of these kinds of CSS as you want. However, if some
+            properties have been defined mulitple times, the value last read will be used. Therefore the priority is in
+            this order 1. Inline style (inside an HTML element) 2. External and internal style sheets (in the head
+            section) 3.Browser default<br>
+            By sprating HTML and CSS in different file, you can easily keep all your webpages in unified and easily
+            modifiable style with a better legibility, and this is an essential of complicated web application.
+          </p>
+
+        </div>
+
+        <!--CSS Code Card-->
+        <div class="col-lg-6 font-shadow-none">
+          <div class="htmlCode">
+            <div id="hCode0" class="card rounded mb-10 "
+              style="border-radius:10px; background-color:rgba(240, 235, 230, 0.9)">
+              <div class="card-body">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en-US"&gt;<br>
+                <div id="hCode1" class="card rounded mb-10 " style="background-color:#D8E3D9 ;">
+                  <div class="card-body">&lt;head&gt;
+                    <div id="hCode2" class="card" style="background-color:#F0E5DC ;">
+                      <div class="card-body">
+                        &lt;title&gt;HTML EXAMPLE 1&lt;/title&gt;
+                      </div>
+                    </div>
+                    <div id="CSSBlock1" class="card" style="display: none; background-color:#B2EFCF ;">
+                      <div id="CSSBlock2" class="card-body"></div>
+                    </div>
+
+                    &lt;/head&gt;
+                  </div>
+                </div>
+                <br>
+                <div id="hCode4" class="card" style="background-color:#E3D0D3 ;">
+                  <div class=" card-body">
+                    &lt;body<div id="inlineCSS1" style="display: none;"> style="color:white" </div>&gt;<br>
+
+                    <div id="hCode5" class="card" style="background-color:#ECE0E2 ;">
+                      <div class="card-body">
+                        &lt;h1<div id="inlineCSS2" style="display: none;"> style="font-size: medium" </div>&gt;
+                        Hi! Welcome to HTML EXAMPLE 1！
+                        &lt;/h1&gt;
+                      </div>
+                    </div>
+                    <div id="hCode7" class="card" style="background-color:#FFF1C7 ;">
+                      <div class="card-body">
+                        &lt;p<div id="inlineCSS3" style="display: none;"> style="color:black;margin: 1rem" </div>&gt;
+                        Here is the main paragraph of this document with an image below.
+                        &lt;/p&gt;
+                      </div>
+                    </div>
+                    &lt;/body&gt;
+                  </div>
+                </div>
+                <br>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div id="CSSBlock3" class="card" style="display: none; background-color:#FFF5D9 ;">
+              <div id="CSSBlock4" class="card-body"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <a id="prev2" href="#h-sec-1"></a>
+    <a id="next2" href="#h-sec-3"></a>
+  </div>
+
+  <!--Screen 3-->
+  <div id="h-sec-3" class="container-fluid font-shadow-white d-flex align-items-center justify-content-center">
+    <div class="content container-fluid">
+      <h1 class="text-center text-uppercase">How to combine CSS and HTML Elements</h1>
+
+      <div class="row">
+        <!--Selectors Info-->
+        <div class="col-lg-6">
+          <h2 class="text-center text-uppercase">CSS SELECTORS</h2>
+          <!--CSS Code Explain-->
+          <!--Basic Explain-->
+          <div id="CSSSelector0">
+            <p class="h-sec-2-p text-center text-justify">
+              CSS selectors are the key to "find" (or select) the HTML elements to style by using the class or ID
+              attrbute. Here are some basic selectors.
+            </p>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle text-uppercase">P</div>
+              <p class="CSSSelectorDes">Select by tag, all &lt;p&gt; elements will be affected.</p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">#abc</div>
+              <p class="CSSSelectorDes">Select by ID attribute,The ID of the element has to be unique within a
+                document,
+                so the id selector will select one unique element which id="abc".</p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">.Class</div>
+              <p class="CSSSelectorDes">Select by class, all elements with a specific class "Class" will be affected.
+              </p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">P.abc</div>
+              <p class="CSSSelectorDes">The combination of tag and class selector, only &lt;p&gt; elements with
+                class="abc" will be affected. e.g. &lt;p class="abc"&gt;</p>
+            </div>
+
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">*</div>
+              <p class="CSSSelectorDes">The universal selector will select all elements in the document.</p>
+            </div>
+
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">p,h1,#a</div>
+              <p class="CSSSelectorDes">The grouping selector will select all kinds of elements including &lt;p&gt;,
+                &lt;h1&gt;, and element with id="a"</p>
+            </div>
+          </div>
+          <!--Combanator Explain-->
+          <div id="CSSSelector1" style="display: none;">
+            <p class="h-sec-2-p text-center text-justify">
+              The CSS selectors can contain more than one selector with a combinator, different combinators mean
+              different relationship between the elements.
+            </p>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle text-uppercase">space</div>
+              <p class="CSSSelectorDes">The descendant selector matches all elements that are descendants of a
+                specified element.
+                'p img' selects all &lt;img&gt; elements inside lt;p&gt; elements: </p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle text-uppercase">&gt;</div>
+              <p class="CSSSelectorDes">The child selector(&gt;) selects all elements that are the children of a
+                specified element. 'p&gt;img' selects all &lt;img&gt; elements are children of a &lt;p&gt; element.
+              </p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">+</div>
+              <p class="CSSSelectorDes">The adjacent sibling selector selects all elements that are the adjacent
+                siblings of a specified element.
+                'p+img' selects all &lt;img&gt; elements immediately after a &lt;p&gt; element.
+              </p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">~</div>
+              <p class="CSSSelectorDes">
+                The general sibling selector selects all elements that are siblings of a element.
+                'p~img' selects all &lt;img&gt; elements are siblings of &lt;p&gt; element.
+              </p>
+            </div>
+
+
+          </div>
+          <!--Pseudo Class Explain-->
+          <div id="CSSSelector2" style="display: none;">
+            <p class="h-sec-2-p text-center text-justify">
+              A pseudo-class is used to define a special state of an element,
+              including a mouses over it, an element gets focus or a link is visited.
+              You can make some animation by pseudo-class, like getting bigger when user's mouse is on one element.
+              Below are some examples.<br>
+              <strong>Syntax:</strong> selector:pseudo-class { property:value; }
+            </p>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">hover</div>
+              <p class="CSSSelectorDes">Special style on mouse over.</p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">link</div>
+              <p class="CSSSelectorDes">Special style on unvisited links.</p>
+            </div>
+            <div class="text-center d-flex text-justify">
+              <div class="CSSSelectorTitle">focus</div>
+              <p class="CSSSelectorDes">Special style on the input element that has focus</p>
+            </div>
+          </div>
+          <!--Explain Page Buttons -->
+          <ul class="CSSSelectorPage pagination justify-content-center">
+            <li class="page-item"><a id="CSSSelectorPage1" class="page-link" href="javascript:void(0);"
+                onclick="CSSSelector(0)">Basic</a></li>
+            <li class="page-item"><a id="CSSSelectorPage2" class="page-link" href="javascript:void(0);"
+                onclick="CSSSelector(1)">Combanation</a></li>
+            <li class="page-item"><a id="CSSSelectorPage3" class="page-link" href="javascript:void(0);"
+                onclick="CSSSelector(2)">Pseudo-classes</a></li>
+          </ul>
+        </div>
+
+        <!--Selectors Checking Area-->
+        <div class="col-lg-6">
+          <h2 id="h2-3" class="text-center text-uppercase">Click the selectors below</h2>
+          <p class="h-sec-3-p text-center  text-justify">
+            Check the CSS selectors to see what elements it refers. Are you thinking the same?
+          </p>
+
+          <!--Buttons-->
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a id="cs0" href="javascript:void(0);">*</a></li>
+            <li class="breadcrumb-item"><a id="cs1" href="javascript:void(0);">.main</a></li>
+            <li class="breadcrumb-item"><a id="cs2" href="javascript:void(0);">#no1</a></li>
+            <li class="breadcrumb-item"><a id="cs3" href="javascript:void(0);">body img</a></li>
+            <li class="breadcrumb-item"><a id="cs4" href="javascript:void(0);">body&gt;img</a></li>
+            <li class="breadcrumb-item"><a id="cs5" href="javascript:void(0);">p+img</a></li>
+          </ul>
+
+          <div id="c30" class="card">
+            <div class="card-body">
+              &lt;body&gt;<br>
+
+              <div id="c31" class="card">
+                <div class="card-body">
+                  &lt;h1 class="main"&gt; &lt;/h1&gt;
+                </div>
+              </div>
+              <div id="c32" class="card">
+                <div class="card-body">
+                  &lt;p&gt;
+                  &lt;/p&gt;
+                </div>
+              </div>
+              <div id="c33" class="card">
+                <div class="card-body">
+                  &lt;p class="main" &gt;<br>
+                  <div id="c34" class="card">
+                    <div class="card-body">
+                      &lt;img id="no1" src=" ../html.png" alt="image" &gt;<br></div>
+                  </div>
+                  &lt;/p&gt;
+                </div>
+              </div>
+              <div id="c35" class="card">
+                <div class="card-body">
+                  &lt;img class="main" src=" ../html.png" alt="image" &gt;<br></div>
+              </div>
+              &lt;/body&gt;
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <a id="prev3" href="#h-sec-2"></a>
+    <a id="next3" href="#h-sec-4"></a>
+  </div>
+
+  <!--Screen 4-->
+  <div id="h-sec-4" class="container-fluid d-flex align-items-center font-shadow-white justify-content-center">
+    <div class="content container-fluid">
+      <h1 id="headText4" class="text-center text-uppercase">CSS Creates Diffrence</h1>
+      <!--Buttons-->
+      <ul class="CSSDemoPage pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="CSSDemo(0)">CSS1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="CSSDemo(1)">CSS2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="CSSDemo(2)">CSS3</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="CSSDemo(3)">NO CSS</a></li>
+      </ul>
+      <div class="row">
+        <!--Example Code Area-->
+        <div id="HECode" class="col-lg-6 font-shadow-none" style="display: none;">
+          <div class="htmlCode">
+            <div id="c40" class="card" style="display: none;">
+              <div class="card-body">
+                *{<br>
+                color: white;<br>
+                font-family: Arial, Helvetica, sans-serif;<br>
+
+                }<br>
+                h1{<br>
+                margin: 0.3rem 1rem 0rem 1rem;<br>
+
+                }<br>
+                h2{<br>
+                margin: 0rem 1rem 1rem;<br>
+
+                }<br>
+                p{<br>
+                color: black;<br>
+                background-color: white;<br>
+                margin: 0.5rem 1rem 0rem;<br>
+                border-radius: 3px;<br>
+                border-bottom-left-radius: 0;<br>
+                border-bottom-right-radius: 0;<br>
+                }<br>
+                .sidebar{<br>
+                padding: 1rem 1rem 0rem;<br>
+                background-color: grey;<br>
+                border-bottom-left-radius: 0;<br>
+                border-bottom-right-radius: 0;<br>
+                margin: 0rem 1rem 0rem;<br>
+                }<br>
+                .sidetext{<br>
+                margin: 0rem 1rem 0rem;<br>
+                background-color: grey;<br>
+                border-bottom-left-radius: 3px;<br>
+                border-bottom-right-radius: 3px;<br>
+                padding: 0rem 1rem 1rem;<br>
+                }<br>
+                footer{<br>
+                font-size: x-small;<br>
+
+                }<br><br></div>
+            </div>
+            <div id="c41" class="card" style="display: none;">
+              <div class="card-body">
+                *{<br>
+                font-family: 'Times New Roman', Times, serif;<br>
+
+                }<br>
+
+                h1,h2{<br>
+                font-weight: 100;<br>
+                color: white;<br>
+                background-color: #83B7A1;<br>
+                padding: 0rem 1rem;<br>
+                }<br>
+
+                h2{<br>
+                font-weight: 300;<br>
+                border-bottom-left-radius: 5px;<br>
+                border-bottom-right-radius: 5px;<br>
+
+                }<br>
+                p{<br>
+                width: 50%;<br>
+                }<br>
+                .sidebar, .sidetext{<br>
+                width: 30%;<br>
+                position: relative;<br>
+                left:60%;<br>
+                top: -15rem;<br>
+                background-color: grey;<br>
+                margin: 0rem 1rem 0rem;<br>
+                color: white;<br>
+                }<br>
+
+                .sidetext{<br>
+                border-bottom-left-radius: 3px;<br>
+                border-bottom-right-radius: 3px;<br>
+                }<br>
+                footer{<br><br>
+                color: gray;<br>
+                border: black solid 1px;<br>
+                text-align: center;<br>
+                }<br><br></div>
+            </div>
+            <div id="c42" class="card" style="display: none;">
+              <div class="card-body">
+                *{<br>
+                color: #84c754;<br>
+                text-align: center;<br>
+                font-family: 'Courier New', Courier, monospace;<br>
+                }<br>
+                h1{<br>
+                font-size: 1.5rem;<br>
+                }<br>
+                h2{<br>
+                font-size: 1rem;<br>
+                font-weight: 500;<br>
+                }<br>
+                p{<br>
+                text-align: justify;<br>
+                }<br>
+                .sidebar, .sidetext, footer{<br>
+                color: white;<br>
+                }<br>
+                .sidebar{<br>
+                font-size: 1.5rem;<br>
+                font-weight: 300;<br>
+                margin: 0rem 1rem 0rem;<br>
+                border: white solid 1px;<br>
+                padding: 1rem 1rem 0rem;<br>
+                }<br>
+
+                .sidetext{<br>
+                margin: 0rem 1rem 0rem;<br>
+                background-color: blue;<br>
+                padding: 0rem 1rem 1rem;<br>
+
+                }<br>
+                footer{<br>
+                font-size: x-small;<br>
+                margin: 0rem 1rem 0rem;<br>
+                }<br><br></div>
+            </div>
+            <div id="c43" class="card" style="display: none;">
+              <div class="card-body">
+                Hope you enjoy this web development journey so far.<br></div>
+            </div>
+
+          </div>
+        </div>
+        <!--Example Browser Area-->
+        <div id="HExampleArea">
+          <div id="HETitle" class="font-shadow-none text-uppercase">
+            WEB MESUME BROWSER
+          </div>
+          <div id="HExampleDisplay">
+            <!--Example Browser Welcome Panel-->
+            <div id="HExampleWelcome">
+              <p id="HExampleWelcomeHead">WELCOME TO WEB MESUME BROWSER AGAIN!</p>
+              <p>It's your turn to see how CSS works,
+                simply choose the buttons above to switch from different stylesheet! Click the first
+                button to start!
+              </p>
+            </div>
+            <div id="HExampleContent" style="display: none;">
+              <div id="c4e1">Welcome to Tommy's Site!</div>
+              <div id="c4e2">Now you're testing the magic CSS!</div>
+              <div id="c4e3">Thanks so much for visting this website.
+                Although I've been running something based on WordPress or other templates for years,
+                But this is still very first time to write a whole website by hand-typing code.<br>
+                It actually took so many time from the design to implement.
+                Everytime when I want to do something, have to search a lot,
+                but it does makes me learned so many new skills. Tired but satisfactory.</div>
+              <div id="c4e4">A Side Bar</div>
+              <div id="c4e5">Click the links to see more Tommy's website.</div>
+              <div id="c4e6">Copyright © 2012-2020 Besttz. All rights reserved.</div>
+
+
+
+            </div>
+            <div id="hEndOfBrowser"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <a id="prev4" href="#h-sec-3"></a>
+    <a id="next4" href="#h-sec-5"></a>
+  </div>
+
+  <!--Screen 5-->
+  <div id="h-sec-5" class="container-fluid d-flex align-items-center font-shadow-none justify-content-center">
+    <div class="content container-fluid">
+      <div class="row">
+        <!--Summary Text-->
+        <div class="col-md-6" id="homeText3">
+          <h2 class="headText3 text-center text-uppercase">the end of the css journey</h2>
+          <p class="text-center  text-justify">
+            Now you know what is CSS. By learning CSS,
+            you can stylize your webpage as you want. However, the key of building a dynamic and interactive webpage is
+            JavaScript. The real programming language running behind the webpage.<br>
+            Click the JavaScript icon to start the last journey!
+          </p>
+
+        </div>
+        <!--CSS Icon-->
+        <div class="col-md-6">
+          <a href="../js/index.html">
+            <img class="mx-auto d-block htmlIcon home-icon" src="../media/js.svg" alt="HTML logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <a id="prev5" href="#h-sec-4"></a>
+    <a id="next5" href="#h-sec-5"></a>
+  </div>
+
+  <!--Footer-->
   <footer class="footer">
     <div class="container text-center">
       Copyright © 2012-2020 <a href="http://tommy.nz" style="color: #f0f0f0;">Besttz</a>. All rights reserved.
@@ -116,6 +582,5 @@
   </footer>
 
 </body>
-
 
 </html>

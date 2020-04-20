@@ -1,0 +1,1 @@
+max = 5; //FOR KEYBOARD PAGE CONTROL
