@@ -216,21 +216,21 @@
             <div id="j330" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(0)">
               <p class="JSSelectorDes">document.getElementById(no.1)</p>
             </div>
-            <div id="j331"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(1)">
+            <div id="j331" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(1)">
               <p class="JSSelectorDes">document.getElementsByTagName(h1)</p>
             </div>
-            <div id="j332"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(2)">
+            <div id="j332" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(2)">
               <p class="JSSelectorDes">document.getElementsByClassName(main)</p>
             </div>
-            <div id="j333"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(3)">
+            <div id="j333" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(3)">
               <p class="JSSelectorDes">document.getElementById(a).innerHTML="Changed by DOM!"</p>
             </div>
 
-            <div id="j334"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(4)">
+            <div id="j334" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(4)">
               <p class="JSSelectorDes">document.getElementById(no1).src="../img.png" </p>
             </div>
 
-            <div id="j335"  class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(5)">
+            <div id="j335" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(5)">
               <p class="JSSelectorDes">document.getElementById(a).style.color = "white";</p>
             </div>
           </div>
@@ -238,34 +238,29 @@
           <div id="j32" style="display: none;">
             <h2 class="text-center text-uppercase">JQuery</h2>
             <p class="h-sec-2-p text-center text-justify">
-              The CSS selectors can contain more than one selector with a combinator, different combinators mean
-              different relationship between the elements.
+              jQuery is a JavaScript library created in 2006 by John Resig. It was designed to handle the
+              Incompatibilities between different Browser and to simplify HTML DOM Manipulation, Event Handling and
+              other JavaScript operations.It has been one of the most popular JavaScript libraries now. 
+              To use it, you have to include its code by external files or CDN first. <br>
+              Here are some example of jQuery, try it and think about how would it simplify JS code.
             </p>
-            <div id="j336"  class="text-center d-flex text-justify timeline-content">
-              <div class=" text-uppercase">space</div>
-              <p class="JSSelectorDes">The descendant selector matches all elements that are descendants of a
-                specified element.
-                'p img' selects all &lt;img&gt; elements inside lt;p&gt; elements: </p>
+            <div id="j336" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(0)">
+              <p class="JSSelectorDes">$("#no1")</p>
             </div>
-            <div id="j337"  class="text-center d-flex text-justify timeline-content">
-              <div class=" text-uppercase">&gt;</div>
-              <p class="JSSelectorDes">The child selector(&gt;) selects all elements that are the children of a
-                specified element. 'p&gt;img' selects all &lt;img&gt; elements are children of a &lt;p&gt; element.
-              </p>
+            <div id="j337" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(1)">
+              <p class="JSSelectorDes">$("h1")</p>
             </div>
-            <div id="j338"  class="text-center d-flex text-justify timeline-content">
-              <div class="">+</div>
-              <p class="JSSelectorDes">The adjacent sibling selector selects all elements that are the adjacent
-                siblings of a specified element.
-                'p+img' selects all &lt;img&gt; elements immediately after a &lt;p&gt; element.
-              </p>
+            <div id="j338" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(2)">
+              <p class="JSSelectorDes"> $(".main")</p>
             </div>
-            <div id="j339"  class="text-center d-flex text-justify timeline-content">
-              <div class="">~</div>
-              <p class="JSSelectorDes">
-                The general sibling selector selects all elements that are siblings of a element.
-                'p~img' selects all &lt;img&gt; elements are siblings of &lt;p&gt; element.
-              </p>
+            <div id="j339" class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(3)">
+              <p class="JSSelectorDes">$("#a").html("Changed by DOM!")</p>
+            </div>
+            <div class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(4)">
+              <p class="JSSelectorDes">$("#no1").setAttribute("src","../img.png")</p>
+            </div>
+            <div class="text-center d-flex text-justify timeline-content" onclick="jsOnclick(5)">
+              <p class="JSSelectorDes">$("#a").style.color = "white"</p>
             </div>
 
 
@@ -297,8 +292,9 @@
               </div>
               <div id="j342" class="card">
                 <div class="card-body">
-                  &lt;p id="a" <span id="j3403" style="display: none;"">style="color:white;"</span>&gt; <span id="j3401" style="display: none;">Changed by DOM!</span>
-                  &lt;/p&gt;
+                  &lt;p id="a" <span id="j3403" style="display: none;"">style=" color:white;"</span>&gt; <span
+                      id="j3401" style="display: none;">Changed by DOM!</span>
+                    &lt;/p&gt;
                 </div>
               </div>
               <div id="j343" class="card">
