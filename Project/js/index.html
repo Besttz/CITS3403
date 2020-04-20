@@ -65,7 +65,7 @@
           <h1 class="text-center text-uppercase">JavaScript</h1>
 
           <h2 class="text-center text-uppercase">The brain of WEB</h2>
-          <p id="homeP" class="text-center  text-justify">
+          <p id="homeP" class="text-center  text-justify" onclick="alert(alerttxt);">
             As the development of computer network, people start to interact more with the webpage, the head of browser
             company Netscape found that they need a scripting language written within HTML document to control the
             browser. At that time, the internet speed is much slower and the fee is very high, so that must be helpful
@@ -75,7 +75,7 @@
             element you have seen is powered by JavaScript. When you touch some button, the behaviour is detected by the
             browser, it will execute some specific JS code to change some content. You can try to use arrow keys left
             and
-            right to turn the pages in this website, it is also driven by JavaScript.
+            right to turn the pages in this website, it is also driven by JavaScript. Click this paragraph to have a try!
           </p>
         </div>
       </div>
@@ -101,21 +101,21 @@
           </p>
           <div id="j21"" class=" text-center d-flex text-justify timeline-content">
             <div class="JSCodeTitle text-uppercase">BODY</div>
-            <p class="JSCodeDes">A JS function is placed inside the body element of an HTML document before a button
+            <p class="JSCodeDes">Some JS code is placed inside the body element of an HTML document before a button
               element, so when the user clicks the button, it will change the heading.</p>
 
           </div>
           <div id="j22" class="text-center d-flex text-justify timeline-content">
             <div class="JSCodeTitle text-uppercase">HEAD</div>
-            <p class="JSCodeDes">CSS stylesheet which affect one single HTML document, use selectors to indicate
-              elements, it is defined inside the &lt;style&gt; element in the head section.
+            <p class="JSCodeDes">This code can be also placed in the
+              head section. However, it must be written as a function so that the button can call it when clicked.
             </p>
 
           </div>
           <div id="j23" class="text-center d-flex text-justify timeline-content">
             <div class="JSCodeTitle text-uppercase">External</div>
-            <p class="JSCodeDes">Same form as the internal CSS, but in sperate file from the HTML document. Each
-              stylesheet can be referenced by multiple webpages by using &lt;link&gt; element inside the head section.
+            <p class="JSCodeDes">When the same JS code is used in many HTML documents, 
+              the best way is to place them in an external file. Like external CSS, it is easy maintenance.
             </p>
 
           </div>
@@ -191,7 +191,7 @@
               <div id="CSSBlock2" class="card-body">
                 <strong>FILE: myScript.js <br></strong>
                 function button(){<br> document.getElementById('heading').innerHTML='You Clicked'}
-                
+
               </div>
             </div>
             <div id="CSSBlock3" class="card" style="display: none; background-color:#FFF5D9 ;">
@@ -210,7 +210,7 @@
   <!--Screen 3-->
   <div id="h-sec-3" class="container-fluid font-shadow-white d-flex align-items-center justify-content-center">
     <div class="content container-fluid">
-      <h1 class="text-center text-uppercase">How to combine CSS and HTML Elements</h1>
+      <h1 class="text-center text-uppercase">How JavaScript access HTML Elements</h1>
 
       <div class="row">
         <!--Selectors Info-->
